@@ -1,0 +1,270 @@
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe.config
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.pdb
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.AssemblyReference.cache
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.SuggestedBindingRedirects.cache
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Form1.resources
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Properties.Resources.resources
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.GenerateResource.cache
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreCompileInputs.cache
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\mongocrypt.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\SharpCompress.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Snappier.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\ZstdSharp.dll
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.pdb
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.pdb
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\Snappier.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\GSA\1.5\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
+D:\GSA Carcara\GSA Carcara\bin\Debug\mongocrypt.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe.config
+D:\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe
+D:\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.pdb
+D:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\SharpCompress.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\Snappier.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\ZstdSharp.dll
+D:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.pdb
+D:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.pdb
+D:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\Snappier.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.AssemblyReference.cache
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.SuggestedBindingRedirects.cache
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Form1.resources
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Properties.Resources.resources
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.GenerateResource.cache
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreCompileInputs.cache
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
+D:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb
+E:\GSA Carcara\GSA Carcara\bin\Debug\mongocrypt.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe.config
+E:\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe
+E:\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.pdb
+E:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Libmongocrypt.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\SharpCompress.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\Snappier.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\ZstdSharp.dll
+E:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.pdb
+E:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.pdb
+E:\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\Snappier.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.xml
+E:\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.AssemblyReference.cache
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.SuggestedBindingRedirects.cache
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Form1.resources
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Properties.Resources.resources
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.GenerateResource.cache
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreCompileInputs.cache
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
+E:\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\mongocrypt.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe.config
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.pdb
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\SharpCompress.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Snappier.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\ZstdSharp.dll
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.pdb
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.pdb
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Snappier.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.AssemblyReference.cache
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.SuggestedBindingRedirects.cache
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Form1.resources
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Properties.Resources.resources
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.GenerateResource.cache
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreCompileInputs.cache
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
+C:\Users\Carvalho\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\mongocrypt.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe.config
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.pdb
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\SharpCompress.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Snappier.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\ZstdSharp.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.pdb
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.pdb
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Snappier.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.AssemblyReference.cache
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Form1.resources
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Properties.Resources.resources
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.GenerateResource.cache
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreCompileInputs.cache
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb
