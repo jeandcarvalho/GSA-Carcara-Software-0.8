@@ -46,7 +46,7 @@ namespace GSA_Carcara.Classes
                         }
                         Measurements.InsertOne(new Vehicle 
                         {
-                            VideoName = file.Name,
+                            VideoName = file.Name.Substring(0,28),
                             TimeStemp = Convert.ToDateTime(data[0].Substring(0, 19)),
                             Gps_Y = float.Parse(data[7], CultureInfo.InvariantCulture.NumberFormat),
                             Gps_X = float.Parse(data[8], CultureInfo.InvariantCulture.NumberFormat),

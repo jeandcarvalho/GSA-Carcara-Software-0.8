@@ -268,3 +268,17 @@ C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreC
 C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
 C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
 C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GMap.NET.Core.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.xml
