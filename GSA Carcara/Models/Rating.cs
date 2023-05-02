@@ -40,5 +40,8 @@ namespace GSA_Carcara.Models
         [BsonElement("Driver")]
         public string Driver { get; set; }
 
+        [BsonElement("logName")]
+        public string LogName { get; set; }
+
     }
 }

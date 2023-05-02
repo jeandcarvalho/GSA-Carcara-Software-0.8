@@ -1,4 +1,5 @@
 ﻿using Amazon.Util.Internal;
+using AxWMPLib;
 using GSA_Carcara.Classes;
 using GSA_Carcara.Models;
 using MongoDB.Driver;
@@ -23,40 +24,48 @@ namespace GSA_Carcara
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
+            new MediaPlayerControls().InitSettings(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3, axWindowsMediaPlayer4,
+                                                   axWindowsMediaPlayer5, axWindowsMediaPlayer6);
+            new InterfaceSettings().statusDatabase(DatabaseStatus);
+
         }
-        public IMongoClient client = new MongoClient("mongodb://localhost:27017"); // conect to server
+        // conect to server
         public List<Vehicle> CarFiltred = new List<Vehicle>();
         public List<Rating> RatingFiltred = new List<Rating>();
-        private void DBselect_Click(object sender, EventArgs e) // search and update data in mongodb
+    
+        private void openUpdateGSADatabaseMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
-                var database = client.GetDatabase("Aquisitions"); // conect to database
-                var Measurements = database.GetCollection<Vehicle>("Measurements");
-                var Ratings = database.GetCollection<Rating>("Ratings");
+                string DBfolder;
 
-                DBfolder.Text = new Directory_Handler().Directory_Finder();
-                string[] dirs = Directory.GetDirectories(DBfolder.Text);
+                var Measurements = new MongoServices().CarCollection();
+                var Ratings = new MongoServices().RatingCollection();
+                new InterfaceSettings().statusDatabaseLoading(DatabaseStatus);
+                DBfolder = new Directory_Handler().Directory_Finder();         
+                string[] dirs = Directory.GetDirectories(DBfolder);
                 foreach (string dir in dirs)                               //apply functions to all folders in DB
                 {
+                    
                     new FilesFunctions().CsvHandler(dir, Measurements);  //verify if data already exists in collection, if doesnt, read files and add data
                     new FilesFunctions().LogHandler(dir, Ratings);       // ==
                 }
+                
                 new SyncCollections().DateTimeCheck(Measurements, Ratings);   //csv file and log file contain small differences regarding the number of document counts, this function removes non intersection data,    
             }                                                                    //and also data that does not exist in both collections (Keeps data from the intersection of collections using DateTime comparassion for this)
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);    
-            }                                                             
+                MessageBox.Show(ex.Message);
+            }
+            new InterfaceSettings().statusDatabase(DatabaseStatus);
         }
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
             try
             {
-                var database = client.GetDatabase("Aquisitions"); // conect to database
-                var Measurements = database.GetCollection<Vehicle>("Measurements");
-                var Ratings = database.GetCollection<Rating>("Ratings");
+                var Measurements = new MongoServices().CarCollection();
+                var Ratings = new MongoServices().RatingCollection();
                 string[] CarFilters = { textBox1.Text, textBox2.Text, comboBox6.Text };                               //          
                 string[] RatingFilters = { comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text,           //catch the selects filters in combobox's
                                        comboBox7.Text, comboBox8.Text, comboBox9.Text, comboBox10.Text };       //
@@ -71,5 +80,13 @@ namespace GSA_Carcara
                 MessageBox.Show(ex.Message);
             }  
         }
+
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+            new MediaPlayerHandler().SetVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3, axWindowsMediaPlayer4,
+                                               axWindowsMediaPlayer5, axWindowsMediaPlayer6, CarFiltred, RatingFiltred, listView1);
+        }
+
+        
     }   
 }

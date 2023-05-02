@@ -31,7 +31,7 @@ namespace GSA_Carcara.Classes
                listCar.Add(time);
             }
 
-           List<DateTime> duplicates = listCar.GroupBy(x => x)
+            List<DateTime> duplicates = listCar.GroupBy(x => x)
                                         .Where(g => g.Count() > 1)
                                         .Select(x => x.Key).ToList();
 

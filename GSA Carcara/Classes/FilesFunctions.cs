@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data.Entity.Infrastructure;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -24,10 +25,12 @@ namespace GSA_Carcara.Classes
             DirectoryInfo DBdirectoryInfo = new DirectoryInfo(dir);                        //csv handler
             foreach (FileInfo file in DBdirectoryInfo.GetFiles())
             {
-                var filter = Builders<Vehicle>.Filter.Eq("VideoName", file.Name);
-                var results =  Measurements.Find(filter).CountDocuments();
+                var query =
+                        from e in Measurements.AsQueryable<Vehicle>()
+                        where e.VideoName == file.Name.Substring(0, 28)
+                        select e.VideoName;
 
-                if (file.Extension.Contains(".csv") && results==0)
+                if (file.Extension.Contains(".csv") && !query.Any())
                 {
                     string[] csvLines = System.IO.File.ReadAllLines(file.FullName);
                     for (int i = 1; i < csvLines.Length; i++)
@@ -36,7 +39,7 @@ namespace GSA_Carcara.Classes
 
                         string curve = "Straight line";
                         float angle = float.Parse(data[10], CultureInfo.InvariantCulture.NumberFormat);
-                        if(angle < -20)
+                        if (angle < -20)
                         {
                             curve = "Right turn";
                         }
@@ -44,17 +47,17 @@ namespace GSA_Carcara.Classes
                         {
                             curve = "Left turn";
                         }
-                        Measurements.InsertOne(new Vehicle 
+                        Measurements.InsertOne(new Vehicle
                         {
-                            VideoName = file.Name.Substring(0,28),
+                            VideoName = file.Name.Substring(0, 28),
                             TimeStemp = Convert.ToDateTime(data[0].Substring(0, 19)),
                             Gps_Y = float.Parse(data[7], CultureInfo.InvariantCulture.NumberFormat),
                             Gps_X = float.Parse(data[8], CultureInfo.InvariantCulture.NumberFormat),
                             Gps_Z = float.Parse(data[9], CultureInfo.InvariantCulture.NumberFormat),
                             VehicleSpeed = float.Parse(data[11], CultureInfo.InvariantCulture.NumberFormat),
                             WheelAngle = float.Parse(data[10], CultureInfo.InvariantCulture.NumberFormat),
-                        Curves = curve
-                        });                       
+                            Curves = curve
+                        });
                     }
                 }
             }
@@ -68,27 +71,51 @@ namespace GSA_Carcara.Classes
                 if (file.Extension.Contains(".log"))
                 {
                     string[] logLines = System.IO.File.ReadAllLines(file.FullName);
-                    for (int i = 1; i < logLines.Length; i++)
+
+                    var query =
+                                from e in Ratings.AsQueryable<Rating>()
+                                where e.LogName == file.Name
+                                select e.LogName;
+                    if (!query.Any())
                     {
-                        string[] data = logLines[i].Split(',');
-                        var filter = Builders<Rating>.Filter.Eq("TimeStemp", Convert.ToDateTime(data[0]));
-                        var results = Ratings.Find(filter).ToList();
-                        if (results.Count != 0) { break; }
-                        Ratings.InsertOne(new Rating
+                        for (int i = 1; i < logLines.Length; i++)
                         {
-                            TimeStemp = Convert.ToDateTime(data[0]),
-                            RoadType = data[2],
-                            RoadConditions = data[4],
-                            Visibility = data[7],
-                            RoadNumbers = data[6],
-                            Traffic = data[8],
-                            DayPeriod = data[9],
-                            Weather = data[3],
-                            Driver = data[5]
-                        });
+                            string[] data = logLines[i].Split(',');
+
+                            Ratings.InsertOne(new Rating
+                            {
+                                TimeStemp = Convert.ToDateTime(data[0]),
+                                RoadType = data[2],
+                                RoadConditions = data[4],
+                                Visibility = data[7],
+                                RoadNumbers = data[6],
+                                Traffic = data[8],
+                                DayPeriod = data[9],
+                                Weather = data[3],
+                                Driver = data[5],
+                                LogName = file.Name
+                            });
+                        }
+                    }
+
+
+
+
+
+
+                      
                     }
                 }
             }
         }
-    }
+    
+
 }
+/*
+var filter = Builders<Rating>.Filter.Eq("TimeStemp", Convert.ToDateTime(data[0]));
+var results = Ratings.Find(filter).ToList();
+if (results.Count != 0) { break; }
+
+
+
+*/
