@@ -182,29 +182,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\DateTimeTools.cs" />
-    <Compile Include="Classes\DirectoryFunctions.cs" />
+    <Compile Include="Classes\DirectoryHandler.cs" />
     <Compile Include="Classes\FilesFunctions.cs" />
+    <Compile Include="Classes\FilesVerification.cs" />
     <Compile Include="Classes\FiltersFunctions.cs" />
     <Compile Include="Classes\ListViewHandler.cs" />
+    <Compile Include="Classes\MapHandler.cs" />
     <Compile Include="Classes\MediaPlayerHandler.cs" />
     <Compile Include="Classes\MediaPlayerControls.cs" />
     <Compile Include="Classes\InterfaceSettings.cs" />
+    <Compile Include="Classes\MongoFunctions.cs" />
     <Compile Include="Classes\SyncCollections.cs" />
     <Compile Include="Classes\VideosFileName.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Carcara.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Carcara.Designer.cs">
+      <DependentUpon>Carcara.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\MediaPlayerSettings.cs" />
+    <Compile Include="Extract.cs" />
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Vehicle.cs" />
-    <Compile Include="MongoServices.cs" />
+    <Compile Include="Classes\MongoServices.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Carcara.resx">
+      <DependentUpon>Carcara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace GSA_Carcara
 {
-    partial class Form1
+    partial class Carcara
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carcara));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -68,7 +68,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.map = new GMap.NET.WindowsForms.GMapControl();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -81,7 +81,19 @@
             this.axWindowsMediaPlayer3 = new AxWMPLib.AxWindowsMediaPlayer();
             this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.ForwardButton = new System.Windows.Forms.Button();
+            this.BackwardButton = new System.Windows.Forms.Button();
+            this.Less5Seconds = new System.Windows.Forms.Button();
+            this.More5Seconds = new System.Windows.Forms.Button();
+            this.PlayVideos = new System.Windows.Forms.Button();
+            this.PauseVideos = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ExtractButton = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -101,6 +113,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -339,7 +354,7 @@
             // 
             this.SearchButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchButton.Location = new System.Drawing.Point(1039, 258);
+            this.SearchButton.Location = new System.Drawing.Point(1079, 258);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(141, 46);
             this.SearchButton.TabIndex = 6;
@@ -376,11 +391,11 @@
             // listView1
             // 
             this.listView1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(1251, 66);
+            this.listView1.Location = new System.Drawing.Point(1274, 68);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(181, 246);
+            this.listView1.Size = new System.Drawing.Size(178, 246);
             this.listView1.TabIndex = 10;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
@@ -441,7 +456,7 @@
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(586, 36);
+            this.panel2.Location = new System.Drawing.Point(602, 36);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 278);
             this.panel2.TabIndex = 12;
@@ -457,7 +472,7 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(796, 36);
+            this.panel3.Location = new System.Drawing.Point(824, 36);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(205, 276);
             this.panel3.TabIndex = 13;
@@ -466,18 +481,18 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label15.Location = new System.Drawing.Point(58, 267);
+            this.label15.Location = new System.Drawing.Point(8, 10);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(258, 37);
+            this.label15.Size = new System.Drawing.Size(163, 37);
             this.label15.TabIndex = 14;
-            this.label15.Text = "Database status:";
+            this.label15.Text = "Database:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 56);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(520, 171);
+            this.pictureBox1.Size = new System.Drawing.Size(535, 180);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -516,7 +531,7 @@
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.comboBox6);
             this.panel5.Controls.Add(this.panel1);
-            this.panel5.Location = new System.Drawing.Point(1007, 36);
+            this.panel5.Location = new System.Drawing.Point(1047, 36);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(205, 198);
             this.panel5.TabIndex = 22;
@@ -533,9 +548,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 320);
+            this.pictureBox6.Location = new System.Drawing.Point(586, 320);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(2159, 10);
+            this.pictureBox6.Size = new System.Drawing.Size(1589, 10);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 18;
             this.pictureBox6.TabStop = false;
@@ -549,31 +564,31 @@
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
             // 
-            // gMapControl1
+            // map
             // 
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(17, 334);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 2;
-            this.gMapControl1.MinZoom = 2;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
-            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(563, 668);
-            this.gMapControl1.TabIndex = 23;
-            this.gMapControl1.Zoom = 0D;
+            this.map.Bearing = 0F;
+            this.map.CanDragMap = true;
+            this.map.EmptyTileColor = System.Drawing.Color.Navy;
+            this.map.GrayScaleMode = false;
+            this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.map.LevelsKeepInMemory = 5;
+            this.map.Location = new System.Drawing.Point(17, 336);
+            this.map.MarkersEnabled = true;
+            this.map.MaxZoom = 2;
+            this.map.MinZoom = 2;
+            this.map.MouseWheelZoomEnabled = true;
+            this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.map.Name = "map";
+            this.map.NegativeMode = false;
+            this.map.PolygonsEnabled = true;
+            this.map.RetryLoadTile = 0;
+            this.map.RoutesEnabled = true;
+            this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.map.ShowTileGridLines = false;
+            this.map.Size = new System.Drawing.Size(563, 666);
+            this.map.TabIndex = 23;
+            this.map.Zoom = 0D;
             // 
             // pictureBox8
             // 
@@ -597,7 +612,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(570, 28);
+            this.pictureBox10.Location = new System.Drawing.Point(586, 28);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(10, 300);
             this.pictureBox10.TabIndex = 17;
@@ -606,17 +621,17 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1247, 36);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1274, 45);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(194, 22);
+            this.label16.Size = new System.Drawing.Size(169, 20);
             this.label16.TabIndex = 24;
             this.label16.Text = "Double click to preview";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1218, 29);
+            this.pictureBox3.Location = new System.Drawing.Point(1258, 28);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(10, 300);
             this.pictureBox3.TabIndex = 17;
@@ -627,7 +642,7 @@
             this.DatabaseStatus.AutoSize = true;
             this.DatabaseStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.DatabaseStatus.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.DatabaseStatus.Location = new System.Drawing.Point(313, 269);
+            this.DatabaseStatus.Location = new System.Drawing.Point(165, 10);
             this.DatabaseStatus.Name = "DatabaseStatus";
             this.DatabaseStatus.Size = new System.Drawing.Size(175, 37);
             this.DatabaseStatus.TabIndex = 14;
@@ -687,29 +702,161 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(442, 333);
             this.axWindowsMediaPlayer1.TabIndex = 21;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel4.Controls.Add(this.ForwardButton);
+            this.panel4.Controls.Add(this.BackwardButton);
+            this.panel4.Controls.Add(this.Less5Seconds);
+            this.panel4.Controls.Add(this.More5Seconds);
+            this.panel4.Controls.Add(this.PlayVideos);
+            this.panel4.Controls.Add(this.PauseVideos);
+            this.panel4.Location = new System.Drawing.Point(1474, 225);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(429, 89);
+            this.panel4.TabIndex = 25;
+            // 
+            // ForwardButton
+            // 
+            this.ForwardButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForwardButton.Location = new System.Drawing.Point(345, 17);
+            this.ForwardButton.Name = "ForwardButton";
+            this.ForwardButton.Size = new System.Drawing.Size(69, 56);
+            this.ForwardButton.TabIndex = 26;
+            this.ForwardButton.Text = "5x⇛";
+            this.ForwardButton.UseVisualStyleBackColor = true;
+            this.ForwardButton.Click += new System.EventHandler(this.ForwardButton_Click);
+            // 
+            // BackwardButton
+            // 
+            this.BackwardButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackwardButton.Location = new System.Drawing.Point(16, 17);
+            this.BackwardButton.Name = "BackwardButton";
+            this.BackwardButton.Size = new System.Drawing.Size(77, 56);
+            this.BackwardButton.TabIndex = 27;
+            this.BackwardButton.Text = "⇚5x";
+            this.BackwardButton.UseVisualStyleBackColor = true;
+            // 
+            // Less5Seconds
+            // 
+            this.Less5Seconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Less5Seconds.Location = new System.Drawing.Point(99, 17);
+            this.Less5Seconds.Name = "Less5Seconds";
+            this.Less5Seconds.Size = new System.Drawing.Size(56, 56);
+            this.Less5Seconds.TabIndex = 26;
+            this.Less5Seconds.Text = "-5";
+            this.Less5Seconds.UseVisualStyleBackColor = true;
+            this.Less5Seconds.Click += new System.EventHandler(this.Less5Seconds_Click);
+            // 
+            // More5Seconds
+            // 
+            this.More5Seconds.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.More5Seconds.Location = new System.Drawing.Point(281, 17);
+            this.More5Seconds.Name = "More5Seconds";
+            this.More5Seconds.Size = new System.Drawing.Size(58, 56);
+            this.More5Seconds.TabIndex = 27;
+            this.More5Seconds.Text = "+5";
+            this.More5Seconds.UseVisualStyleBackColor = true;
+            this.More5Seconds.Click += new System.EventHandler(this.More5Seconds_Click);
+            // 
+            // PlayVideos
+            // 
+            this.PlayVideos.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayVideos.Location = new System.Drawing.Point(221, 17);
+            this.PlayVideos.Name = "PlayVideos";
+            this.PlayVideos.Size = new System.Drawing.Size(54, 56);
+            this.PlayVideos.TabIndex = 26;
+            this.PlayVideos.Text = "▶";
+            this.PlayVideos.UseVisualStyleBackColor = true;
+            this.PlayVideos.Click += new System.EventHandler(this.PlayVideos_Click);
+            // 
+            // PauseVideos
+            // 
+            this.PauseVideos.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PauseVideos.Location = new System.Drawing.Point(161, 17);
+            this.PauseVideos.Name = "PauseVideos";
+            this.PauseVideos.Size = new System.Drawing.Size(54, 56);
+            this.PauseVideos.TabIndex = 27;
+            this.PauseVideos.Text = "⏸";
+            this.PauseVideos.UseVisualStyleBackColor = true;
+            this.PauseVideos.Click += new System.EventHandler(this.PauseVideos_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1463, 210);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(457, 10);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel6.Controls.Add(this.label15);
+            this.panel6.Controls.Add(this.DatabaseStatus);
+            this.panel6.Location = new System.Drawing.Point(17, 273);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(563, 55);
+            this.panel6.TabIndex = 26;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-752, 241);
+            this.pictureBox2.Location = new System.Drawing.Point(1743, 45);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1332, 10);
+            this.pictureBox2.Size = new System.Drawing.Size(145, 111);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
-            // Form1
+            // ExtractButton
+            // 
+            this.ExtractButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExtractButton.Location = new System.Drawing.Point(1549, 87);
+            this.ExtractButton.Name = "ExtractButton";
+            this.ExtractButton.Size = new System.Drawing.Size(141, 46);
+            this.ExtractButton.TabIndex = 28;
+            this.ExtractButton.Text = "Extract";
+            this.ExtractButton.UseVisualStyleBackColor = true;
+            this.ExtractButton.Click += new System.EventHandler(this.ExtractButton_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(1490, 158);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(398, 43);
+            this.progressBar1.TabIndex = 29;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(1522, 56);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(193, 20);
+            this.label17.TabIndex = 30;
+            this.label17.Text = "Select the output folder to";
+            // 
+            // Carcara
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1920, 1019);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.DatabaseStatus);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.ExtractButton);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.gMapControl1);
+            this.Controls.Add(this.map);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.axWindowsMediaPlayer6);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.axWindowsMediaPlayer5);
             this.Controls.Add(this.axWindowsMediaPlayer4);
             this.Controls.Add(this.axWindowsMediaPlayer3);
@@ -718,7 +865,6 @@
             this.Controls.Add(this.axWindowsMediaPlayer2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox3);
@@ -728,9 +874,10 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Carcara";
+            this.Text = "GSA Carcara";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -755,6 +902,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -806,7 +957,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private GMap.NET.WindowsForms.GMapControl map;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -814,7 +965,19 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ToolStripMenuItem openUpdateGSADatabaseMenuItem;
         private System.Windows.Forms.Label DatabaseStatus;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button PlayVideos;
+        private System.Windows.Forms.Button PauseVideos;
+        private System.Windows.Forms.Button Less5Seconds;
+        private System.Windows.Forms.Button More5Seconds;
+        private System.Windows.Forms.Button ForwardButton;
+        private System.Windows.Forms.Button BackwardButton;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button ExtractButton;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label17;
     }
 }
 

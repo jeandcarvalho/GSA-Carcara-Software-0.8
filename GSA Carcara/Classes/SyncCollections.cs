@@ -20,52 +20,31 @@ namespace GSA_Carcara.Classes
         public List<DateTime> CarDateTime(IMongoCollection<Vehicle> Measurements)
         {
             List<DateTime> listCar = new List<DateTime>();
-
-            var query =
-            from e in Measurements.AsQueryable<Vehicle>()
-            where e.TimeStemp !=null
-            select e.TimeStemp;            
-
-            foreach (var time in query)
-            {
-               listCar.Add(time);
-            }
-
+            var query = from e in Measurements.AsQueryable<Vehicle>() where e.TimeStemp !=null select e.TimeStemp;            
+            foreach (var time in query) { listCar.Add(time); }
             List<DateTime> duplicates = listCar.GroupBy(x => x)
                                         .Where(g => g.Count() > 1)
                                         .Select(x => x.Key).ToList();
-
             foreach (var time in duplicates)
             {
-                var filter = Builders<Vehicle>.Filter.Eq("TimeStemp", time);
-                Measurements.DeleteOne(filter);
-            }
-            return listCar;
+                var filter = Builders<Vehicle>.Filter.Eq("TimeStemp", time); Measurements.DeleteOne(filter);
+            } return listCar;
         }
 
         public List<DateTime> RatingDateTime(IMongoCollection<Rating> Ratings)
         {
             List<DateTime> listRat = new List<DateTime>();
-            var query =
-                        from e in Ratings.AsQueryable<Rating>()
-                        where e.TimeStemp != null
-                        select e.TimeStemp;
-
-            foreach (var time in query)
-            {
-                listRat.Add(time);
-            }
+            var query = from e in Ratings.AsQueryable<Rating>() where e.TimeStemp != null select e.TimeStemp;
+            foreach (var time in query){ listRat.Add(time);}
             return listRat;
         }
 
         public void CarTimeToDelete(List<DateTime> listCar, List<DateTime> listRat, IMongoCollection<Vehicle> Measurements)
         {
-
             List<DateTime> timesDiff = listCar.Except(listRat).ToList(); 
             foreach (var time in timesDiff)
             {
-                var filter = Builders<Vehicle>.Filter.Eq("TimeStemp", time);
-                Measurements.DeleteMany(filter);
+                var filter = Builders<Vehicle>.Filter.Eq("TimeStemp", time);Measurements.DeleteMany(filter);
             }
         }
 
@@ -74,8 +53,7 @@ namespace GSA_Carcara.Classes
             List<DateTime> timesDiff = listRat.Except(listCar).ToList();
             foreach (var time in timesDiff)
             {
-                var filter = Builders<Rating>.Filter.Eq("TimeStemp", time);
-                Ratings.DeleteMany(filter);
+                var filter = Builders<Rating>.Filter.Eq("TimeStemp", time);Ratings.DeleteMany(filter);
             }
         }
 
@@ -83,10 +61,8 @@ namespace GSA_Carcara.Classes
         {
             var filter = Builders<Vehicle>.Filter.Empty;
             var filter2 = Builders<Rating>.Filter.Empty;
-
             var cursor = Measurements.Find(filter);
             var cursor2 = Ratings.Find(filter2);
-
             if (cursor.CountDocuments() != cursor2.CountDocuments())
             {
                 var CarTimes = new SyncCollections().CarDateTime(Measurements);

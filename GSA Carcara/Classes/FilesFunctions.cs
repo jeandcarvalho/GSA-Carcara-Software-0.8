@@ -22,33 +22,21 @@ namespace GSA_Carcara.Classes
 
         public void CsvHandler(string dir, IMongoCollection<Vehicle> Measurements)
         {
-            DirectoryInfo DBdirectoryInfo = new DirectoryInfo(dir);                        //csv handler
+            DirectoryInfo DBdirectoryInfo = new DirectoryInfo(dir);                       
             foreach (FileInfo file in DBdirectoryInfo.GetFiles())
             {
-                var query =
-                        from e in Measurements.AsQueryable<Vehicle>()
-                        where e.VideoName == file.Name.Substring(0, 28)
-                        select e.VideoName;
-
+                var query = new FilesVerification().CsvVerification(Measurements, file.Name);         //verify if csv is already insert in database
                 if (file.Extension.Contains(".csv") && !query.Any())
                 {
                     string[] csvLines = System.IO.File.ReadAllLines(file.FullName);
                     for (int i = 1; i < csvLines.Length; i++)
                     {
                         string[] data = csvLines[i].Split(',');
-
                         string curve = "Straight line";
                         float angle = float.Parse(data[10], CultureInfo.InvariantCulture.NumberFormat);
-                        if (angle < -20)
-                        {
-                            curve = "Right turn";
-                        }
-                        if (angle > 20)
-                        {
-                            curve = "Left turn";
-                        }
-                        Measurements.InsertOne(new Vehicle
-                        {
+                        if (angle < -20) {   curve = "Right turn";  }
+                        if (angle > 20)  {      curve = "Left turn";     }
+                        Measurements.InsertOne(new Vehicle  {
                             VideoName = file.Name.Substring(0, 28),
                             TimeStemp = Convert.ToDateTime(data[0].Substring(0, 19)),
                             Gps_Y = float.Parse(data[7], CultureInfo.InvariantCulture.NumberFormat),
@@ -56,8 +44,7 @@ namespace GSA_Carcara.Classes
                             Gps_Z = float.Parse(data[9], CultureInfo.InvariantCulture.NumberFormat),
                             VehicleSpeed = float.Parse(data[11], CultureInfo.InvariantCulture.NumberFormat),
                             WheelAngle = float.Parse(data[10], CultureInfo.InvariantCulture.NumberFormat),
-                            Curves = curve
-                        });
+                            Curves = curve });
                     }
                 }
             }
@@ -65,57 +52,29 @@ namespace GSA_Carcara.Classes
 
         public void LogHandler(string dir, IMongoCollection<Rating> Ratings)
         {
-            DirectoryInfo DBdirectoryInfo = new DirectoryInfo(dir);                        //log handler
+            DirectoryInfo DBdirectoryInfo = new DirectoryInfo(dir);                   
             foreach (FileInfo file in DBdirectoryInfo.GetFiles())
             {      
                 if (file.Extension.Contains(".log"))
                 {
                     string[] logLines = System.IO.File.ReadAllLines(file.FullName);
-
-                    var query =
-                                from e in Ratings.AsQueryable<Rating>()
-                                where e.LogName == file.Name
-                                select e.LogName;
-                    if (!query.Any())
+                    var query = new FilesVerification().LogVerification(Ratings, file.Name);     ////verify if logis already insert in database
+                    if (!query.Any()) 
                     {
                         for (int i = 1; i < logLines.Length; i++)
                         {
                             string[] data = logLines[i].Split(',');
-
-                            Ratings.InsertOne(new Rating
-                            {
+                            Ratings.InsertOne(new Rating  {
                                 TimeStemp = Convert.ToDateTime(data[0]),
-                                RoadType = data[2],
-                                RoadConditions = data[4],
-                                Visibility = data[7],
-                                RoadNumbers = data[6],
-                                Traffic = data[8],
-                                DayPeriod = data[9],
-                                Weather = data[3],
-                                Driver = data[5],
-                                LogName = file.Name
-                            });
+                                RoadType = data[2], RoadConditions = data[4],
+                                Visibility = data[7], RoadNumbers = data[6],
+                                Traffic = data[8], DayPeriod = data[9],
+                                Weather = data[3], Driver = data[5],
+                                LogName = file.Name  });
                         }
-                    }
-
-
-
-
-
-
-                      
-                    }
+                    }                   
                 }
             }
         }
-    
-
+    }
 }
-/*
-var filter = Builders<Rating>.Filter.Eq("TimeStemp", Convert.ToDateTime(data[0]));
-var results = Ratings.Find(filter).ToList();
-if (results.Count != 0) { break; }
-
-
-
-*/

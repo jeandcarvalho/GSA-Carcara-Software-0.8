@@ -17,7 +17,7 @@ namespace GSA_Carcara.Classes
         {
             listView1.Items.Clear();
             listView1.Columns.Clear();
-            listView1.Columns.Add("Time", 155);
+            listView1.Columns.Add("Result", 155);
         }
 
         public void AddToListView(System.Windows.Forms.ListView listView1, List<Vehicle> CarFiltred, List<Rating> RatingFiltred)

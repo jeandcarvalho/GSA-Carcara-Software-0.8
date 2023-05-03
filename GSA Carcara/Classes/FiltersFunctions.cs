@@ -26,13 +26,10 @@ namespace GSA_Carcara.Classes
                         from e in Measurements.AsQueryable<Vehicle>()
                         where e.VehicleSpeed >= SpeedMin && e.VehicleSpeed <= SpeedMax && e.Curves.Contains(Filters[2])
                         select e;
-            foreach (var data in query)
-            {
-                list.Add(data);
-            }
+
+            foreach (var data in query) { list.Add(data); }
             return list;
         }
-
         public List<Rating> RatingFilter(IMongoCollection<Rating> Ratings, string[] Filters)
         {
             List<Rating> list = new List<Rating>();
@@ -44,42 +41,19 @@ namespace GSA_Carcara.Classes
                               e.DayPeriod.Contains(Filters[4]) && e.Weather.Contains(Filters[5]) && 
                               e.Visibility.Contains(Filters[6]) && e.Driver.Contains(Filters[7])
                         select e;
-            foreach (var data in query)
-            {
-                list.Add(data);
-            }
+
+            foreach (var data in query)  {  list.Add(data);   }
             return list;
         }
-
-        public void ConcateFilters(List<Vehicle> CarFiltred, List<Rating> RatingFiltred)
+        public void IntersectFilters(List<Vehicle> CarFiltred, List<Rating> RatingFiltred)
         {
             List<DateTime> Car = new List<DateTime>();
             List<DateTime> Rating = new List<DateTime>();
-            foreach (var data in CarFiltred)
-            {
-                Car.Add(data.TimeStemp);
-            }
-            foreach (var data in RatingFiltred)
-            {
-                Rating.Add(data.TimeStemp);
-            }
-
+            foreach (var data in CarFiltred)     { Car.Add(data.TimeStemp); }
+            foreach (var data in RatingFiltred)   { Rating.Add(data.TimeStemp); }
             var Intersect = Car.Intersect(Rating).ToList();
-
-            foreach (var time in CarFiltred.ToList()) 
-            {
-                if (!Intersect.Contains(time.TimeStemp))
-                {
-                    CarFiltred.Remove(time);
-                }
-            }
-
-            foreach (var time in RatingFiltred.ToList())
-            {
-                if (!Intersect.Contains(time.TimeStemp))
-                {
-                    RatingFiltred.Remove(time);
-                }
+            foreach (var time in CarFiltred.ToList())   { if (!Intersect.Contains(time.TimeStemp)) { CarFiltred.Remove(time) ;}  }
+            foreach (var time in RatingFiltred.ToList())   { if (!Intersect.Contains(time.TimeStemp)) { RatingFiltred.Remove(time);  }
             }
         }
     }
