@@ -1,5 +1,6 @@
 ﻿using Amazon.Util.Internal;
 using AxWMPLib;
+using GSA_Carcara.Class;
 using GSA_Carcara.Classes;
 using GSA_Carcara.Models;
 using MongoDB.Driver;
@@ -43,8 +44,9 @@ namespace GSA_Carcara
             new InterfaceSettings().ProgressBarDown(progressBar1); //reset progress bar 
             try
             {
-                var Measurements = new MongoServices().CarCollection();              //catch both collections in db
-                var Ratings = new MongoServices().RatingCollection();             
+                var collections = new GetCollections();
+                var Measurements = collections.CarCollection();              //catch both collections in db
+                var Ratings = collections.RatingCollection();             
                 string[] CarFilters = { textBox1.Text, textBox2.Text, comboBox6.Text };                                     
                 string[] RatingFilters = { comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text,           //catch the selects filters in combobox's
                                        comboBox7.Text, comboBox8.Text, comboBox9.Text, comboBox10.Text };           
@@ -66,6 +68,7 @@ namespace GSA_Carcara
             try
             {
                 new Extract().ExtractFiles(CarFiltred, RatingFiltred);  //extract video files and data filtred in csv
+                new InterfaceSettings().ProgressBarUp(progressBar1);
             }
             catch(Exception ex)
             {

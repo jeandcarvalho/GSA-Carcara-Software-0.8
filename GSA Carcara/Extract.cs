@@ -6,6 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GSA_Carcara;
+using System.Windows.Forms;
 
 namespace GSA_Carcara
 {
@@ -36,6 +38,7 @@ namespace GSA_Carcara
                         }
                     }
                 }
+                
                 new Extract().ExtractCsv(CarFiltred, RatingFiltred, outputFolder);                        //extract csv to same folder
             }
         }

@@ -288,3 +288,77 @@ C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\Interop.WMPLib.dll
 C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.ResolveComReference.cache
 C:\Users\Jean\Desktop\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Carcara.resources
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\mongocrypt.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe.config
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.pdb
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GMap.NET.Core.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\SharpCompress.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Snappier.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\ZstdSharp.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.pdb
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.pdb
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Snappier.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Interop.WMPLib.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.AssemblyReference.cache
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\Interop.WMPLib.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.ResolveComReference.cache
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Carcara.resources
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Properties.Resources.resources
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.GenerateResource.cache
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreCompileInputs.cache
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
+C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb

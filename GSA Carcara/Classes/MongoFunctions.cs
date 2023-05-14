@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GSA_Carcara.Class;
+using GSA_Carcara.Models;
+using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,10 +16,12 @@ namespace GSA_Carcara.Classes
         public void AddUpdateMongo(Label DatabaseStatus)
         {
             try
-            {
+            { 
                 string DBfolder;
-                var Measurements = new MongoServices().CarCollection();
-                var Ratings = new MongoServices().RatingCollection();
+                var collections = new GetCollections();
+                var Measurements = collections.CarCollection();
+                var Ratings = collections.RatingCollection();
+
                 new InterfaceSettings().statusDatabaseLoading(DatabaseStatus);
                 DBfolder = new Directory_Handler().Directory_Finder();
                 new FilesVerification().SaveDBdir(DBfolder);                             //save db directory in local storage to aux other functions

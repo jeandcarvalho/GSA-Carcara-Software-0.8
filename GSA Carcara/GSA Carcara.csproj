@@ -201,10 +201,11 @@
       <DependentUpon>Carcara.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\MediaPlayerSettings.cs" />
+    <Compile Include="Class\GetCollections.cs" />
     <Compile Include="Extract.cs" />
+    <Compile Include="Interface\IMongoServices.cs" />
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Vehicle.cs" />
-    <Compile Include="Classes\MongoServices.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Carcara.resx">
@@ -280,6 +281,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MongoDB.Libmongocrypt.1.7.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.7.0\build\MongoDB.Libmongocrypt.targets')" />

@@ -2,6 +2,7 @@
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
+using GSA_Carcara.Class;
 using GSA_Carcara.Models;
 using MongoDB.Driver;
 using System;
@@ -18,8 +19,9 @@ namespace GSA_Carcara.Classes
     {
         public void SetStarterMap( GMapControl map)
         {
+            var collections = new GetCollections();
             map.MapProvider = GMapProviders.GoogleMap;
-            var Measurements = new MongoServices().CarCollection();
+            var Measurements = collections.CarCollection();
             List<PointLatLng> markersList = new List<PointLatLng>();
             GMapOverlay markers = new GMapOverlay("Markers");
             List<float> gpsX = new List<float>();

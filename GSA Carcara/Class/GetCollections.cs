@@ -1,4 +1,5 @@
-﻿using GSA_Carcara.Models;
+﻿using GSA_Carcara.Interface;
+using GSA_Carcara.Models;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -6,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GSA_Carcara
+namespace GSA_Carcara.Class
 {
-    public class MongoServices
+    public class GetCollections : ICarCollection, IRatingCollection
     {
         public IMongoCollection<Vehicle> CarCollection()
         {
@@ -25,5 +26,5 @@ namespace GSA_Carcara
             var Ratings = database.GetCollection<Rating>("Ratings");
             return Ratings;
         }
-    }  
+    }
 }

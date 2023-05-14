@@ -641,7 +641,7 @@
             // 
             this.DatabaseStatus.AutoSize = true;
             this.DatabaseStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.DatabaseStatus.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.DatabaseStatus.ForeColor = System.Drawing.SystemColors.Control;
             this.DatabaseStatus.Location = new System.Drawing.Point(165, 10);
             this.DatabaseStatus.Name = "DatabaseStatus";
             this.DatabaseStatus.Size = new System.Drawing.Size(175, 37);
