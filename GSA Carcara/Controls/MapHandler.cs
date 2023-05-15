@@ -32,23 +32,8 @@ namespace GSA_Carcara.Classes
 
         public void SetMap(List<Vehicle> Measurements, GMapControl map, System.Windows.Forms.ListView listView)
         {
-            if (listView.SelectedItems.Count > 0)
-            {
-                PointLatLng point;
-                ListViewItem item = listView.SelectedItems[0];
-                DateTime moment = new DateTimeTools().ItemToDateTime(item.Text.ToString());
-
-                foreach (var coordinate in Measurements)
-                {
-                    if (coordinate.TimeStemp == moment)
-                    {
-                        float x = coordinate.Gps_X; float y = coordinate.Gps_Y;
-                        point = new PointLatLng(y, x);
-                        map.Position = point;
-                        map.Zoom = 15;
-                    }
-                }
-            }
+            var place = new MapPlace();
+            place.PlaceMap(map, listView, Measurements);
         }
     }
 }

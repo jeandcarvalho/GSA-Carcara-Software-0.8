@@ -41,7 +41,6 @@ namespace GSA_Carcara
         }
         private void SearchButton_Click(object sender, EventArgs e)
         {
-            new InterfaceSettings().ProgressBarDown(progressBar1); //reset progress bar 
             try
             {
                 var collections = new GetCollections();
@@ -68,7 +67,6 @@ namespace GSA_Carcara
             try
             {
                 new Extract().ExtractFiles(CarFiltred, RatingFiltred);  //extract video files and data filtred in csv
-                new InterfaceSettings().ProgressBarUp(progressBar1);
             }
             catch(Exception ex)
             {
@@ -79,7 +77,6 @@ namespace GSA_Carcara
 
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
-            new InterfaceSettings().ProgressBarDown(progressBar1);
             new MediaPlayerHandler().SetVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3, axWindowsMediaPlayer4,//set and play videos
                                                axWindowsMediaPlayer5, axWindowsMediaPlayer6, CarFiltred, RatingFiltred, listView1);
             new MapHandler().SetMap(CarFiltred, map, listView1);//defines map position to the same location in the moment clicked

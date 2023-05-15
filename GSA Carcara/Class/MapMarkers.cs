@@ -12,10 +12,11 @@ namespace GSA_Carcara.Class
 {
     public class MapMarkers : IShowMarkers
     {
+        List<PointLatLng> markersList = new List<PointLatLng>();
+        GMapOverlay markers = new GMapOverlay("Markers");
+
         public void ShowMarkers(GMapControl map, List<float> gpsXList, List<float> gpsYList)
         {
-            List<PointLatLng> markersList = new List<PointLatLng>();
-            GMapOverlay markers = new GMapOverlay("Markers");
             for (int i = 0; i < gpsXList.Count; i++)
             {
                 PointLatLng point = new PointLatLng(gpsYList[i], gpsXList[i]);
