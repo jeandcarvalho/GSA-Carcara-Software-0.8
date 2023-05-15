@@ -17,33 +17,17 @@ namespace GSA_Carcara.Classes
 {
     public class MapHandler
     {
+        
         public void SetStarterMap( GMapControl map)
         {
-            var collections = new GetCollections();
-            map.MapProvider = GMapProviders.GoogleMap;
-            var Measurements = collections.CarCollection();
-            List<PointLatLng> markersList = new List<PointLatLng>();
-            GMapOverlay markers = new GMapOverlay("Markers");
-            List<float> gpsX = new List<float>();
-            List<float> gpsY = new List<float>();
-            var queryX = from e in Measurements.AsQueryable<Vehicle>() select e.Gps_X;
-            var queryY = from e in Measurements.AsQueryable<Vehicle>() select e.Gps_Y;
-            if(queryX.Any())
-            {
-                foreach (var coordinate in queryX)    {  gpsX.Add(coordinate);  }
-                foreach (var coordinate in queryY)    {  gpsY.Add(coordinate);  }
-                for (int i = 0; i < gpsX.Count; i++)
-                {
-                    PointLatLng point = new PointLatLng(gpsY[i], gpsX[i]);
-                    markersList.Add(point);
-                    GMapMarker marker = new GMarkerGoogle(point, GMarkerGoogleType.red_small);
-                    markers.Markers.Add(marker);
-                    i++; i++; i++;
-                }
-                map.Overlays.Add(markers);
-                map.Position = markersList[0];
-                map.MinZoom = 4; map.MaxZoom = 18;map.Zoom = 4;
-            }
+            map.MapProvider = GMapProviders.GoogleMap; 
+            var mapSet = new MapCoordinates();
+            var gpsX = mapSet.GetCoordinatesX();
+            var gpsY = mapSet.GetCoordinatesY();
+            var gpsXList = mapSet.ListCoordinatesX(gpsX);
+            var gpsYList = mapSet.ListCoordinatesX(gpsY);
+            var mapMarkers = new MapMarkers();
+            mapMarkers.ShowMarkers(map, gpsXList, gpsYList);
         }
 
         public void SetMap(List<Vehicle> Measurements, GMapControl map, System.Windows.Forms.ListView listView)

@@ -202,7 +202,10 @@
     </Compile>
     <Compile Include="Classes\MediaPlayerSettings.cs" />
     <Compile Include="Class\GetCollections.cs" />
+    <Compile Include="Class\MapCoordinates.cs" />
+    <Compile Include="Class\MapMarkers.cs" />
     <Compile Include="Extract.cs" />
+    <Compile Include="Interface\IMap.cs" />
     <Compile Include="Interface\IMongoServices.cs" />
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Vehicle.cs" />
