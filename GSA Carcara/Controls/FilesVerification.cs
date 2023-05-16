@@ -30,14 +30,6 @@ namespace GSA_Carcara.Classes
             return query;
         }
 
-        public void SaveDBdir(string DBfolder)
-        {
-            string path = System.AppDomain.CurrentDomain.BaseDirectory + "\\dbInfo\\dbInfo.txt".ToString();
-            using (StreamWriter writer = new StreamWriter(path))
-            {
-                writer.WriteLine(DBfolder);
-            }
-        }  
         
         public string GetDBfodler()
         {

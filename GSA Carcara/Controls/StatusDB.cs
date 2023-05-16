@@ -16,7 +16,7 @@ namespace GSA_Carcara.Classes
     {
         public void statusDatabase(System.Windows.Forms.Label status)
         {
-           var statusDB = new StatusDatabase();
+           var statusDB = new VerifyStatusDB();
            statusDB.SetStatusDatabase(status);
         }
 

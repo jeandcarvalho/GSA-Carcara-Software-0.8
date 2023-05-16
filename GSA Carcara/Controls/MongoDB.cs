@@ -17,14 +17,15 @@ namespace GSA_Carcara.Classes
         {
             try
             { 
-                string DBfolder;
-                var collections = new GetCollections();
-                var Measurements = collections.CarCollection();
-                var Ratings = collections.RatingCollection();
+                var Measurements = new GetCollections().CarCollection();
+                var Ratings = new GetCollections().RatingCollection();
 
                 new StatusDB().statusDatabaseLoading(DatabaseStatus);
-                DBfolder = new Directory_Handler().Directory_Finder();
-                new FilesVerification().SaveDBdir(DBfolder);                             //save db directory in local storage to aux other functions
+
+
+                string DBfolder = new GetDirectory().SelectDirectory();
+                new SaveDirectoryDB().SaveFolderDB(DBfolder);                             //save db directory in local storage to aux other functions
+                
                 string[] dirs = Directory.GetDirectories(DBfolder);
                 foreach (string dir in dirs)                                           //apply functions to all folders in DB
                 {

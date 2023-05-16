@@ -181,8 +181,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\SaveDirectoryDB.cs" />
+    <Compile Include="Class\GetDirectory.cs" />
     <Compile Include="Class\MediaPlayerConfig.cs" />
-    <Compile Include="Class\StatusDatabase.cs" />
+    <Compile Include="Class\VerifyStatusDB.cs" />
     <Compile Include="Class\MapPlace.cs" />
     <Compile Include="Controls\DateTimeTools.cs" />
     <Compile Include="Controls\DirectoryHandler.cs" />
@@ -208,6 +210,7 @@
     <Compile Include="Class\MapCoordinates.cs" />
     <Compile Include="Class\MapMarkers.cs" />
     <Compile Include="Extract.cs" />
+    <Compile Include="Interface\IDirectory.cs" />
     <Compile Include="Interface\ILayout.cs" />
     <Compile Include="Interface\IMap.cs" />
     <Compile Include="Interface\IMediaPlayer.cs" />
