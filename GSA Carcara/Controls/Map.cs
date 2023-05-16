@@ -15,9 +15,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GSA_Carcara.Classes
 {
-    public class MapHandler
+    public class Map
     {
-        
         public void SetStarterMap( GMapControl map)
         {
             map.MapProvider = GMapProviders.GoogleMap; 

@@ -12,12 +12,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GSA_Carcara.Classes
 {
-    public class InterfaceSettings
+    public class StatusDB
     {
         public void statusDatabase(System.Windows.Forms.Label status)
         {
-           var statusDB = new DatabaseStatus();
-           statusDB.StatusDatabase(status);
+           var statusDB = new StatusDatabase();
+           statusDB.SetStatusDatabase(status);
         }
 
         public void statusDatabaseLoading(System.Windows.Forms.Label status)

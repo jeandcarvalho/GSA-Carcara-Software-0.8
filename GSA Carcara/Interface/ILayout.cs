@@ -9,6 +9,6 @@ namespace GSA_Carcara.Interface
 {
     interface IStatusDatabase
     {
-        void StatusDatabase(Label status);
+        void SetStatusDatabase(Label status);
     }
 }

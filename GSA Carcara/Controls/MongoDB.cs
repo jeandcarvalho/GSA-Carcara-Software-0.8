@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace GSA_Carcara.Classes
 {
-    public class MongoFunctions
+    public class MongoDB
     {
         public void AddUpdateMongo(Label DatabaseStatus)
         {
@@ -22,7 +22,7 @@ namespace GSA_Carcara.Classes
                 var Measurements = collections.CarCollection();
                 var Ratings = collections.RatingCollection();
 
-                new InterfaceSettings().statusDatabaseLoading(DatabaseStatus);
+                new StatusDB().statusDatabaseLoading(DatabaseStatus);
                 DBfolder = new Directory_Handler().Directory_Finder();
                 new FilesVerification().SaveDBdir(DBfolder);                             //save db directory in local storage to aux other functions
                 string[] dirs = Directory.GetDirectories(DBfolder);
@@ -37,7 +37,7 @@ namespace GSA_Carcara.Classes
             {
                 MessageBox.Show(ex.Message);
             }
-            new InterfaceSettings().statusDatabase(DatabaseStatus);
+            new StatusDB().statusDatabase(DatabaseStatus);
         }
     }
 }

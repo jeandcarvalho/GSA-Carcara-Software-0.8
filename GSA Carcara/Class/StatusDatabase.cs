@@ -12,9 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GSA_Carcara.Class
 {
-    public class DatabaseStatus : IStatusDatabase
+    public class StatusDatabase : IStatusDatabase
     {
-        public void StatusDatabase(System.Windows.Forms.Label status)
+        public void SetStatusDatabase(System.Windows.Forms.Label status)
         {
             var collections = new GetCollections();
             var vehicle = collections.CarCollection();

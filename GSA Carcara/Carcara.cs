@@ -24,20 +24,21 @@ namespace GSA_Carcara
     {
         public List<Vehicle> CarFiltred = new List<Vehicle>();
         public List<Rating> RatingFiltred = new List<Rating>();
-       
         public Carcara()
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
-            new MapHandler().SetStarterMap(map);
-            new InterfaceSettings().statusDatabase(DatabaseStatus);
-            new MediaPlayerControls().InitSettings(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3, 
-                                                   axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);     
+            new StatusDB().statusDatabase(DatabaseStatus);
+            new Map().SetStarterMap(map);
+            var mp = new MediaPlayerConfig();
+            mp.InitSettings(axWindowsMediaPlayer1, axWindowsMediaPlayer2, 
+                            axWindowsMediaPlayer3, axWindowsMediaPlayer4, 
+                            axWindowsMediaPlayer5, axWindowsMediaPlayer6);
         }
         private void openUpdateGSADatabaseMenuItem_Click(object sender, EventArgs e) //insert first datas in db, or update files not inserted
         {
-            new MongoFunctions().AddUpdateMongo(DatabaseStatus);
-            new MapHandler().SetStarterMap(map); //define initial map
+            new Classes.MongoDB().AddUpdateMongo(DatabaseStatus);
+            new Map().SetStarterMap(map); //define initial map
         }
         private void SearchButton_Click(object sender, EventArgs e)
         {
@@ -79,7 +80,7 @@ namespace GSA_Carcara
         {
             new MediaPlayerHandler().SetVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3, axWindowsMediaPlayer4,//set and play videos
                                                axWindowsMediaPlayer5, axWindowsMediaPlayer6, CarFiltred, RatingFiltred, listView1);
-            new MapHandler().SetMap(CarFiltred, map, listView1);//defines map position to the same location in the moment clicked
+            new Map().SetMap(CarFiltred, map, listView1);//defines map position to the same location in the moment clicked
         }
 
         private void PlayVideos_Click(object sender, EventArgs e)

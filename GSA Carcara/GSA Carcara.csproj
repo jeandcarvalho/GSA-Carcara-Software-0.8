@@ -181,7 +181,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\DatabaseStatus.cs" />
+    <Compile Include="Class\MediaPlayerConfig.cs" />
+    <Compile Include="Class\StatusDatabase.cs" />
     <Compile Include="Class\MapPlace.cs" />
     <Compile Include="Controls\DateTimeTools.cs" />
     <Compile Include="Controls\DirectoryHandler.cs" />
@@ -189,11 +190,11 @@
     <Compile Include="Controls\FilesVerification.cs" />
     <Compile Include="Controls\FiltersFunctions.cs" />
     <Compile Include="Controls\ListViewHandler.cs" />
-    <Compile Include="Controls\MapHandler.cs" />
+    <Compile Include="Controls\Map.cs" />
     <Compile Include="Controls\MediaPlayerHandler.cs" />
     <Compile Include="Controls\MediaPlayerControls.cs" />
-    <Compile Include="Controls\InterfaceSettings.cs" />
-    <Compile Include="Controls\MongoFunctions.cs" />
+    <Compile Include="Controls\StatusDB.cs" />
+    <Compile Include="Controls\MongoDB.cs" />
     <Compile Include="Controls\SyncCollections.cs" />
     <Compile Include="Controls\VideosFileName.cs" />
     <Compile Include="Carcara.cs">
@@ -209,6 +210,7 @@
     <Compile Include="Extract.cs" />
     <Compile Include="Interface\ILayout.cs" />
     <Compile Include="Interface\IMap.cs" />
+    <Compile Include="Interface\IMediaPlayer.cs" />
     <Compile Include="Interface\IMongoServices.cs" />
     <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Vehicle.cs" />
