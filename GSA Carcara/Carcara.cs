@@ -37,7 +37,7 @@ namespace GSA_Carcara
         }
         private void openUpdateGSADatabaseMenuItem_Click(object sender, EventArgs e) //insert first datas in db, or update files not inserted
         {
-            new Classes.MongoDB().AddUpdateMongo(DatabaseStatus);
+            new Classes.MongoDB().UpdateMongo(DatabaseStatus);
             new Map().SetStarterMap(map); //define initial map
         }
         private void SearchButton_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
 ﻿using AxWMPLib;
+using GSA_Carcara.Class;
 using GSA_Carcara.Classes;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace GSA_Carcara
         public void SetURLVideos(AxWindowsMediaPlayer axWindowsMediaPlayer1, AxWindowsMediaPlayer axWindowsMediaPlayer2, AxWindowsMediaPlayer axWindowsMediaPlayer3,
                              AxWindowsMediaPlayer axWindowsMediaPlayer4, AxWindowsMediaPlayer axWindowsMediaPlayer5, AxWindowsMediaPlayer axWindowsMediaPlayer6, string videoName)
         {
-            string DBfolder = new FilesVerification().GetDBfodler();
+            string DBfolder = new DirectoryDB().GetFolderDB();
             string[] dirs = Directory.GetDirectories(DBfolder);
             foreach (string dir in dirs)
             {

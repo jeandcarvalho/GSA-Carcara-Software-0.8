@@ -17,17 +17,20 @@ namespace GSA_Carcara.Class
 
         public void ShowMarkers(GMapControl map, List<float> gpsXList, List<float> gpsYList)
         {
-            for (int i = 0; i < gpsXList.Count; i++)
+            if (gpsXList.Count != 0)
             {
-                PointLatLng point = new PointLatLng(gpsYList[i], gpsXList[i]);
-                GMapMarker marker = new GMarkerGoogle(point, GMarkerGoogleType.red_small);
-                markersList.Add(point);
-                markers.Markers.Add(marker);
-                i +=3; // items show interval
-            }
-            map.Overlays.Add(markers);
-            map.Position = markersList[0];
-            map.MinZoom = 4; map.MaxZoom = 18; map.Zoom = 4;
+                for (int i = 0; i < gpsXList.Count; i++)
+                {
+                    PointLatLng point = new PointLatLng(gpsYList[i], gpsXList[i]);
+                    GMapMarker marker = new GMarkerGoogle(point, GMarkerGoogleType.red_small);
+                    markersList.Add(point);
+                    markers.Markers.Add(marker);
+                    i += 3; // items show interval
+                }
+                map.Overlays.Add(markers);
+                map.Position = markersList[0];
+                map.MinZoom = 4; map.MaxZoom = 18; map.Zoom = 4;
+            } 
         }
     }
 }

@@ -181,37 +181,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\SaveDirectoryDB.cs" />
+    <Compile Include="Class\CsvInsert.cs" />
+    <Compile Include="Class\CsvVerify.cs" />
+    <Compile Include="Class\LogInsert.cs" />
+    <Compile Include="Class\LogVerify.cs" />
+    <Compile Include="Class\DirectoryDB.cs" />
     <Compile Include="Class\GetDirectory.cs" />
     <Compile Include="Class\MediaPlayerConfig.cs" />
     <Compile Include="Class\VerifyStatusDB.cs" />
     <Compile Include="Class\MapPlace.cs" />
-    <Compile Include="Controls\DateTimeTools.cs" />
-    <Compile Include="Controls\DirectoryHandler.cs" />
-    <Compile Include="Controls\FilesFunctions.cs" />
-    <Compile Include="Controls\FilesVerification.cs" />
-    <Compile Include="Controls\FiltersFunctions.cs" />
-    <Compile Include="Controls\ListViewHandler.cs" />
+    <Compile Include="Controls\Csv.cs" />
+    <Compile Include="FunctionsToUpdate\DateTimeTools.cs" />
+    <Compile Include="Class\Directory.cs" />
+    <Compile Include="FunctionsToUpdate\FiltersFunctions.cs" />
+    <Compile Include="FunctionsToUpdate\ListViewHandler.cs" />
+    <Compile Include="Controls\Log.cs" />
     <Compile Include="Controls\Map.cs" />
-    <Compile Include="Controls\MediaPlayerHandler.cs" />
-    <Compile Include="Controls\MediaPlayerControls.cs" />
+    <Compile Include="FunctionsToUpdate\MediaPlayerHandler.cs" />
+    <Compile Include="FunctionsToUpdate\MediaPlayerControls.cs" />
     <Compile Include="Controls\StatusDB.cs" />
     <Compile Include="Controls\MongoDB.cs" />
-    <Compile Include="Controls\SyncCollections.cs" />
-    <Compile Include="Controls\VideosFileName.cs" />
+    <Compile Include="FunctionsToUpdate\SyncCollections.cs" />
+    <Compile Include="FunctionsToUpdate\VideosFileName.cs" />
     <Compile Include="Carcara.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Carcara.Designer.cs">
       <DependentUpon>Carcara.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MediaPlayerSettings.cs" />
+    <Compile Include="FunctionsToUpdate\MediaPlayerSettings.cs" />
     <Compile Include="Class\GetCollections.cs" />
     <Compile Include="Class\MapCoordinates.cs" />
     <Compile Include="Class\MapMarkers.cs" />
-    <Compile Include="Extract.cs" />
+    <Compile Include="FunctionsToUpdate\Extract.cs" />
+    <Compile Include="Interface\IFileCsv.cs" />
     <Compile Include="Interface\IDirectory.cs" />
     <Compile Include="Interface\ILayout.cs" />
+    <Compile Include="Interface\IFileLog.cs" />
     <Compile Include="Interface\IMap.cs" />
     <Compile Include="Interface\IMediaPlayer.cs" />
     <Compile Include="Interface\IMongoServices.cs" />

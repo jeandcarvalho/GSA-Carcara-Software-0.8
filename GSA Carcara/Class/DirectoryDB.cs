@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GSA_Carcara.Class
 {
-    public class SaveDirectoryDB : ISaveDBdirectory
+    public class DirectoryDB : ISaveDBdirectory, IGetSavedDBdirectory
     {
         public void SaveFolderDB(string folder)
         {
@@ -16,6 +16,16 @@ namespace GSA_Carcara.Class
             using (StreamWriter writer = new StreamWriter(path))
             {
                 writer.WriteLine(folder);
+            }
+        }
+
+        public string GetFolderDB() 
+        {
+            string path = System.AppDomain.CurrentDomain.BaseDirectory + "\\dbInfo\\dbInfo.txt".ToString();
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string dir = reader.ReadLine();
+                return dir;
             }
         }
     }
