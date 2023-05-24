@@ -20,7 +20,7 @@ namespace GSA_Carcara.Classes
            statusDB.SetStatusDatabase(status);
         }
 
-        public void statusDatabaseLoading(System.Windows.Forms.Label status)
+        public void DatabaseLoading(System.Windows.Forms.Label status)
         {
             status.Text = "Loading..";
         }

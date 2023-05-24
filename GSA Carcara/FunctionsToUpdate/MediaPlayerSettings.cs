@@ -15,7 +15,7 @@ namespace GSA_Carcara
         public void SetURLVideos(AxWindowsMediaPlayer axWindowsMediaPlayer1, AxWindowsMediaPlayer axWindowsMediaPlayer2, AxWindowsMediaPlayer axWindowsMediaPlayer3,
                              AxWindowsMediaPlayer axWindowsMediaPlayer4, AxWindowsMediaPlayer axWindowsMediaPlayer5, AxWindowsMediaPlayer axWindowsMediaPlayer6, string videoName)
         {
-            string DBfolder = new DirectoryDB().GetFolderDB();
+            string DBfolder = new DirectoryDBload().GetFolderDB();
             string[] dirs = Directory.GetDirectories(DBfolder);
             foreach (string dir in dirs)
             {

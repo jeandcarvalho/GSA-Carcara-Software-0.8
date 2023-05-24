@@ -37,7 +37,7 @@ namespace GSA_Carcara
 
         private void updateGSADBMenuItem_Click(object sender, EventArgs e)
         {
-            new Classes.MongoDB().UpdateMongo(DatabaseStatus);
+            new DBmongo().UpdateMongo(DatabaseStatus);
             new Map().SetStarterMap(map);                                                                                           //define initial map
         }
 
@@ -50,7 +50,7 @@ namespace GSA_Carcara
                 var Ratings = collections.RatingCollection();             
                 string[] CarFilters = { textBox1.Text, textBox2.Text, comboBox6.Text };                                     
                 string[] RatingFilters = { comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text,                         //catch the selects filters in combobox's
-                                       comboBox7.Text, comboBox8.Text, comboBox9.Text, comboBox10.Text };           
+                                           comboBox7.Text, comboBox8.Text, comboBox9.Text, comboBox10.Text };           
 
                 CarFiltred = new FiltersFunctions().CarFilter(Measurements, CarFilters);                                           //apply filters in measurements collection, and get query data to a list
                 RatingFiltred = new FiltersFunctions().RatingFilter(Ratings, RatingFilters);                                       //apply filters in ratings collection, and get query data to a list

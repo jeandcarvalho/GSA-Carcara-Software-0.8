@@ -1,4 +1,5 @@
 ﻿using GSA_Carcara.Class;
+using GSA_Carcara.Interface;
 using GSA_Carcara.Models;
 using MongoDB.Driver;
 using System;
@@ -14,17 +15,19 @@ namespace GSA_Carcara.Controls
     {
         public void LogHandler(string dir)
         {
+            ILogVerification logVerify = new LogVerify();
+            IInsertLog logInsert = new LogInsert();
             DirectoryInfo DBdirectoryInfo = new DirectoryInfo(dir);
             foreach (FileInfo file in DBdirectoryInfo.GetFiles())
             {
                 bool verify = false;
                 if (file.Extension.Contains(".log"))
                 {
-                    verify = new LogVerify().LogVerification(file.Name);
+                    verify = logVerify.LogVerification(file.Name);
                 }
                 if (file.Extension.Contains(".log") && verify == true)
                 {
-                    new LogInsert().Insert(file);
+                    logInsert.Insert(file);
                 }
             }
         }

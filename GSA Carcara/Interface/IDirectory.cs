@@ -16,7 +16,7 @@ namespace GSA_Carcara.Interface
         void SaveFolderDB(string folder);
     }
 
-    interface IGetSavedDBdirectory
+    interface IGetDBdirectory
     {
        string GetFolderDB();
     }

@@ -16,12 +16,18 @@ namespace GSA_Carcara.Class
     {
         public void SetStatusDatabase(System.Windows.Forms.Label status)
         {
-            var collections = new GetCollections();
+            ICarCollection collections = new GetCollections();
             var vehicle = collections.CarCollection();
             var filter = Builders<Vehicle>.Filter.Empty;
             var results = vehicle.Find(filter).CountDocuments();
             if (results == 0) { status.Text = "Not loaded"; status.ForeColor = System.Drawing.Color.Red; }
             else { status.Text = "Loaded"; status.ForeColor = System.Drawing.Color.Green; }
+        }
+        public void DatabaseLoading(System.Windows.Forms.Label status)
+        {
+            {
+                status.Text = "Loading.."; status.ForeColor = System.Drawing.Color.MediumBlue;
+            }
         }
     }   
 }
