@@ -63,7 +63,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openUpdateGSADatabaseMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateGSADBMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -511,19 +511,19 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openUpdateGSADatabaseMenuItem});
+            this.updateGSADBMenuItem});
             this.fileToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 25);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // openUpdateGSADatabaseMenuItem
+            // updateGSADBMenuItem
             // 
-            this.openUpdateGSADatabaseMenuItem.Name = "openUpdateGSADatabaseMenuItem";
-            this.openUpdateGSADatabaseMenuItem.Size = new System.Drawing.Size(276, 26);
-            this.openUpdateGSADatabaseMenuItem.Text = "Open/Update GSA Database";
-            this.openUpdateGSADatabaseMenuItem.Click += new System.EventHandler(this.openUpdateGSADatabaseMenuItem_Click);
+            this.updateGSADBMenuItem.Name = "updateGSADBMenuItem";
+            this.updateGSADBMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.updateGSADBMenuItem.Text = "Update GSA DB";
+            this.updateGSADBMenuItem.Click += new System.EventHandler(this.updateGSADBMenuItem_Click);
             // 
             // panel5
             // 
@@ -963,7 +963,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.ToolStripMenuItem openUpdateGSADatabaseMenuItem;
         private System.Windows.Forms.Label DatabaseStatus;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button PlayVideos;
@@ -978,6 +977,7 @@
         private System.Windows.Forms.Button ExtractButton;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ToolStripMenuItem updateGSADBMenuItem;
     }
 }
 

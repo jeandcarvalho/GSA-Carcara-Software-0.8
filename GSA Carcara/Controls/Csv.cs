@@ -28,6 +28,4 @@ namespace GSA_Carcara.Controls
             }
         }
     }
-
-
 }

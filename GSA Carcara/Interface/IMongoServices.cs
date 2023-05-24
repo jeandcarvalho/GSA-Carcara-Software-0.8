@@ -18,21 +18,9 @@ namespace GSA_Carcara.Interface
         IMongoCollection<Rating> RatingCollection();
     }
 
-    interface IGetCoordinatesX
+    interface IGetCoordinates
     {
-        IQueryable<float> GetCoordinatesX();
-    }
-    interface QueryGpsXToList : IGetCoordinatesX
-    { 
-       List<float> ListCoordinatesX(IQueryable<float> gpsX);
-    }
-
-    interface IGetCoordinatesY
-    {
-        IQueryable<float> GetCoordinatesY();
-    }
-    interface QueryGpsYToList : IGetCoordinatesX
-    {
-        List<float> ListCoordinatesY(IQueryable<float> gpsY);
+        IQueryable<float> GetCoordinates();
+        List<float> ListCoordinates(IQueryable<float> gpsX);
     }
 }

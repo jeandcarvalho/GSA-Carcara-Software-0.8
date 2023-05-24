@@ -24,6 +24,5 @@ namespace GSA_Carcara.Classes
         {
             status.Text = "Loading..";
         }
-
     }
 }

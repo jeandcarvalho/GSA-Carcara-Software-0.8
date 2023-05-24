@@ -48,13 +48,13 @@ namespace GSA_Carcara
             using (FileStream fs = File.Create(outputFolder + "\\Data extracted.csv")) { }
             using (StreamWriter writer = new StreamWriter(outputFolder + "\\Data extracted.csv"))
             {
-                writer.WriteLine("TimeStemp,Vehicle Speed,Wheel Angle,Gps X,Gps Y,Gps Z,Day Period,Weather,Visibility,Traffic,RoadConditions,Road Type,Road Numbers,Driver");
+                writer.WriteLine("TimeStemp|Vehicle Speed|Wheel Angle|Gps X|Gps Y|Gps Z|Day Period|Weather|Visibility|Traffic|RoadConditions|Road Type|Road Numbers|Driver");
                 for (int i = 0; i < CarFiltred.Count; i++)
                 {
-                    writer.WriteLine(CarFiltred[i].TimeStemp + "," + CarFiltred[i].VehicleSpeed + "," + CarFiltred[i].WheelAngle + "," +
-                                     CarFiltred[i].Gps_X + "," + CarFiltred[i].Gps_Y + "," + CarFiltred[i].Gps_Z + "," + RatingFiltred[i].DayPeriod + "," +
-                                     RatingFiltred[i].Weather + "," + RatingFiltred[i].Visibility + "," + RatingFiltred[i].Traffic + "," + RatingFiltred[i].RoadConditions + "," +
-                                     RatingFiltred[i].RoadType + "," + RatingFiltred[i].RoadNumbers + "," + RatingFiltred[i].Driver);
+                    writer.WriteLine(CarFiltred[i].TimeStemp + "|" + CarFiltred[i].VehicleSpeed + "|" + CarFiltred[i].WheelAngle + "|" +
+                                     CarFiltred[i].Gps_X + "|" + CarFiltred[i].Gps_Y + "|" + CarFiltred[i].Gps_Z + "|" + RatingFiltred[i].DayPeriod.ToString() + "|" +
+                                     RatingFiltred[i].Weather.ToString() + "|" + RatingFiltred[i].Visibility.ToString() + "|" + RatingFiltred[i].Traffic.ToString() + "|" + RatingFiltred[i].RoadConditions.ToString() + "|" +
+                                     RatingFiltred[i].RoadType.ToString() + "|" + RatingFiltred[i].RoadNumbers.ToString() + "|" + RatingFiltred[i].Driver.ToString());
                 }
             }
         }

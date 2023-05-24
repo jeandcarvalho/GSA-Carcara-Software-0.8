@@ -22,7 +22,7 @@ namespace GSA_Carcara.Class
                 string[] data = csvLines[i].Split(',');  
                 float angle = float.Parse(data[10], CultureInfo.InvariantCulture.NumberFormat);
                 string curve = "Straight line";
-                if (angle < -20) { curve = "Right turn"; }
+                if (angle < -20) { curve = "Right turn"; }  //needs to be improved
                 if (angle > 20) { curve = "Left turn"; }
                 Measurements.InsertOne(new Vehicle
                 {

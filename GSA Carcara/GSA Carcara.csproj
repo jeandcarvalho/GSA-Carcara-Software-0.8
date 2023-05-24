@@ -187,6 +187,7 @@
     <Compile Include="Class\LogVerify.cs" />
     <Compile Include="Class\DirectoryDB.cs" />
     <Compile Include="Class\GetDirectory.cs" />
+    <Compile Include="Class\MapCoordinatesY.cs" />
     <Compile Include="Class\MediaPlayerConfig.cs" />
     <Compile Include="Class\VerifyStatusDB.cs" />
     <Compile Include="Class\MapPlace.cs" />
@@ -211,7 +212,7 @@
     </Compile>
     <Compile Include="FunctionsToUpdate\MediaPlayerSettings.cs" />
     <Compile Include="Class\GetCollections.cs" />
-    <Compile Include="Class\MapCoordinates.cs" />
+    <Compile Include="Class\MapCoordinatesX.cs" />
     <Compile Include="Class\MapMarkers.cs" />
     <Compile Include="FunctionsToUpdate\Extract.cs" />
     <Compile Include="Interface\IFileCsv.cs" />

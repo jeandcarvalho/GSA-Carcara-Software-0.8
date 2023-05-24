@@ -29,13 +29,14 @@ namespace GSA_Carcara.Classes
                     new Csv().CsvHandler(dir);                
                     new Log().LogHandler(dir);                
                 }
-                new SyncCollections().DateTimeCheck(Measurements, Ratings);       //csv file and log file contain small differences regarding the number of document counts, this function removes non intersection data,    
-            }                                                                    //and also data that does not exist in both collections (Keeps data from the intersection of collections using DateTime comparassion for this)
+                new SyncCollections().DateTimeCheck(Measurements, Ratings);
+                new StatusDB().statusDatabase(DatabaseStatus);                      //csv file and log file contain small differences regarding the number of document counts, this function removes non intersection data,    
+            }                                                                       //and also data that does not exist in both collections (Keeps data from the intersection of collections using DateTime comparassion for this)
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            new StatusDB().statusDatabase(DatabaseStatus);
+            
         }
     }
 }
