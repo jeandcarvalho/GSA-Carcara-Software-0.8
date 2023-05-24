@@ -19,20 +19,15 @@ namespace GSA_Carcara.Classes
 {
     public class Map
     {
-       
         public void SetStarterMap( GMapControl map)
         {
             map.MapProvider = GMapProviders.GoogleMap;
-
-            IGetCoordinates mapSetX = new MapCoordinatesX();
-            var gpsX = mapSetX.GetCoordinates();
-            var gpsXList = mapSetX.ListCoordinates(gpsX);
-
-            IGetCoordinates mapSetY = new MapCoordinatesY();
-            var gpsY = mapSetY.GetCoordinates();           
-            var gpsYList = mapSetY.ListCoordinates(gpsY);
-
-            IShowMarkers mapMarkers = new MapMarkers();
+            IGetCoordinates mapSet = new MapCoordinates();
+            IShowMarkers mapMarkers = new MapMarkers();                    
+            var gpsX = mapSet.GetCoordinatesX();
+            var gpsY = mapSet.GetCoordinatesY();
+            var gpsXList = mapSet.ListCoordinatesX(gpsX);                    
+            var gpsYList = mapSet.ListCoordinatesY(gpsY); 
             mapMarkers.ShowMarkers(map, gpsXList, gpsYList);          
         }
 

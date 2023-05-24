@@ -362,3 +362,77 @@ C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.cs
 C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
 C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
 C:\Users\Jean\Desktop\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\mongocrypt.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe.config
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.exe
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GSA Carcara.pdb
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GMap.NET.Core.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\GMap.NET.WindowsForms.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Newtonsoft.Json.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\SharpCompress.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Snappier.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SqlClient.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.EF6.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.Linq.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\ZstdSharp.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.pdb
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.Core.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.pdb
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AWSSDK.SecurityToken.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\DnsClient.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Microsoft.Win32.Registry.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Bson.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\MongoDB.Driver.Core.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Newtonsoft.Json.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Snappier.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Buffers.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SqlClient.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Data.SQLite.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Memory.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Numerics.Vectors.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.AccessControl.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Security.Principal.Windows.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\Interop.WMPLib.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\bin\Debug\AxInterop.WMPLib.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.AssemblyReference.cache
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.SuggestedBindingRedirects.cache
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\Interop.MediaPlayer.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\Interop.WMPLib.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\AxInterop.WMPLib.dll
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.ResolveComReference.cache
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Carcara.resources
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA_Carcara.Properties.Resources.resources
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.GenerateResource.cache
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CoreCompileInputs.cache
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.csproj.CopyComplete
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.exe
+D:\PROGRAMAS\Garoto de Programas\Compiuter\GSA Carcara\GSA Carcara\obj\Debug\GSA Carcara.pdb

@@ -20,7 +20,9 @@ namespace GSA_Carcara.Interface
 
     interface IGetCoordinates
     {
-        IQueryable<float> GetCoordinates();
-        List<float> ListCoordinates(IQueryable<float> gpsX);
+        IQueryable<float> GetCoordinatesX();       
+        IQueryable<float> GetCoordinatesY();
+        List<float> ListCoordinatesX(IQueryable<float> gpsX);
+        List<float> ListCoordinatesY(IQueryable<float> gpsX);
     }
 }
