@@ -38,7 +38,7 @@ namespace GSA_Carcara
         private void updateGSADBMenuItem_Click(object sender, EventArgs e)
         {
             new DBmongo().UpdateMongo(DatabaseStatus);
-            new Map().SetStarterMap(map);                                                                                           //define initial map
+            new Map().SetStarterMap(map);                                                                                         
         }
 
         private void SearchButton_Click(object sender, EventArgs e)

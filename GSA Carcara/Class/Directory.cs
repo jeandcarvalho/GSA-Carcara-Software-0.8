@@ -9,9 +9,6 @@ namespace GSA_Carcara
 {
     public class Directory_Handler
     {
-        public Directory_Handler()
-        {
-        }
         public string Directory_Finder()                                   // allows the user to find a folder
         {
             string Folder = null;

@@ -20,14 +20,15 @@ namespace GSA_Carcara.Class
             if (listView.SelectedItems.Count > 0)
             {   // double-clicked moment 
                 ListViewItem item = listView.SelectedItems[0];
-                var moment = new DateTimeTools().ItemToDateTime(item.Text.ToString());
+                var moment = Convert.ToDateTime(item.Text.ToString());
                 foreach (var coordinate in Measurements)
                 {
                     if (coordinate.TimeStemp == moment)
                     {
                         var x = coordinate.Gps_X; var y = coordinate.Gps_Y;
                         var point = new PointLatLng(y, x);
-                        map.Position=point;map.Zoom=15;}
+                        map.Position=point;map.Zoom=15;
+                    }
                 }
             }
         }

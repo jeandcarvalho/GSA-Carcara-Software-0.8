@@ -14,7 +14,6 @@ namespace GSA_Carcara.Class
     {
         List<PointLatLng> markersList = new List<PointLatLng>();
         GMapOverlay markers = new GMapOverlay("Markers");
-
         public void ShowMarkers(GMapControl map, List<float> gpsXList, List<float> gpsYList)
         {
             if (gpsXList.Count != 0)

@@ -14,10 +14,10 @@ namespace GSA_Carcara.Class
 {
     public class VerifyStatusDB : IStatusDatabase
     {
+        ICarCollection car = new GetCollections();
         public void SetStatusDatabase(System.Windows.Forms.Label status)
         {
-            ICarCollection collections = new GetCollections();
-            var vehicle = collections.CarCollection();
+            var vehicle = car.CarCollection();
             var filter = Builders<Vehicle>.Filter.Empty;
             var results = vehicle.Find(filter).CountDocuments();
             if (results == 0) { status.Text = "Not loaded"; status.ForeColor = System.Drawing.Color.Red; }
@@ -25,9 +25,7 @@ namespace GSA_Carcara.Class
         }
         public void DatabaseLoading(System.Windows.Forms.Label status)
         {
-            {
-                status.Text = "Loading.."; status.ForeColor = System.Drawing.Color.MediumBlue;
-            }
+            status.Text = "Loading.."; status.ForeColor = System.Drawing.Color.MediumBlue;
         }
     }   
 }

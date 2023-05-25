@@ -12,10 +12,10 @@ namespace GSA_Carcara.Class
 {
     public class CsvInsert : IInsertCsv
     {
-   
+        ICarCollection car = new GetCollections();
         public void Insert(FileInfo file)
         {
-            var Measurements = new GetCollections().CarCollection();
+            var Measurements = car.CarCollection();
             string[] csvLines = System.IO.File.ReadAllLines(file.FullName);
             for (int i = 1; i < csvLines.Length; i++)
             {

@@ -1,4 +1,5 @@
 ﻿using GSA_Carcara.Class;
+using GSA_Carcara.Interface;
 using GSA_Carcara.Models;
 using MongoDB.Driver;
 using System;
@@ -14,12 +15,11 @@ namespace GSA_Carcara.Classes
 {
     public class StatusDB
     {
+        IStatusDatabase statusDB = new VerifyStatusDB();
         public void statusDatabase(System.Windows.Forms.Label status)
         {
-           var statusDB = new VerifyStatusDB();
            statusDB.SetStatusDatabase(status);
         }
-
         public void DatabaseLoading(System.Windows.Forms.Label status)
         {
             status.Text = "Loading..";

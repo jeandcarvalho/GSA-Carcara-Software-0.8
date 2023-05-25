@@ -25,4 +25,22 @@ namespace GSA_Carcara.Interface
         List<float> ListCoordinatesX(IQueryable<float> gpsX);
         List<float> ListCoordinatesY(IQueryable<float> gpsX);
     }
+
+    interface IGetDateTimeCollections
+    {
+        List<DateTime> CarDateTime();
+        List<DateTime> RatingDateTime();
+        List<DateTime> CleanDuplicates(List<DateTime> listCar);    
+    }
+
+    interface IDateTimeIntersect
+    {
+        void CarTimeToDelete(List<DateTime> listCar, List<DateTime> listRat);
+        void RatTimeToDelete(List<DateTime> listCar, List<DateTime> listRat);
+    }
+
+    interface ITimesStempHandler
+    {
+        void DeleteDateTimes();
+    }
 }

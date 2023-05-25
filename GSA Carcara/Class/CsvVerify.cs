@@ -11,9 +11,10 @@ namespace GSA_Carcara.Class
 {
     public class CsvVerify : ICsvVerification
     {
+        ICarCollection car = new GetCollections();
         public bool CsvVerification(string fileName)
         {
-            var Measurements = new GetCollections().CarCollection();
+            var Measurements = car.CarCollection();
             var query =
                        from e in Measurements.AsQueryable<Vehicle>()
                        where e.VideoName == fileName.Substring(0, 28)

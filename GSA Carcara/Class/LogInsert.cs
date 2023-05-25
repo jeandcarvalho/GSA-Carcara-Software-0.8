@@ -11,9 +11,10 @@ namespace GSA_Carcara.Class
 {
     public class LogInsert : IInsertLog
     {
+        IRatingCollection rating = new GetCollections();
         public void Insert(FileInfo file)
         {
-            var Ratings = new GetCollections().RatingCollection();
+            var Ratings = rating.RatingCollection();
             string[] logLines = System.IO.File.ReadAllLines(file.FullName);
             for (int i = 1; i < logLines.Length; i++)
             {

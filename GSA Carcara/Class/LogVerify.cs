@@ -11,9 +11,10 @@ namespace GSA_Carcara.Class
 {
     public class LogVerify : ILogVerification
     {
+        IRatingCollection rating = new GetCollections();
         public bool LogVerification(string fileName)
         {
-            var Ratings = new GetCollections().RatingCollection();
+            var Ratings = rating.RatingCollection();
             var query =
                                 from e in Ratings.AsQueryable<Rating>()
                                 where e.LogName == fileName
