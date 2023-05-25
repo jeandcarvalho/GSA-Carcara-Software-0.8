@@ -14,9 +14,13 @@ namespace GSA_Carcara.Interface
     {
         void ShowMarkers(GMapControl map, List<float> gpsXList, List<float> gpsYList);
     }
-
     interface IPlaceMap
     {
         void PlaceMap(GMapControl map, ListView list, List<Vehicle> Measurements);
+    }
+    interface IMap
+    {
+        void SetStarterMap(GMapControl map);
+        void SetMap(List<Vehicle> Measurements, GMapControl map, ListView listView);
     }
 }

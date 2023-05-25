@@ -1,4 +1,5 @@
-﻿using GSA_Carcara.Models;
+﻿using GSA_Carcara.Interface;
+using GSA_Carcara.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
@@ -11,7 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GSA_Carcara.Classes
 {
-    public class ListViewHandler
+    public class ListViewHandler : IListView
     {
         public void setListView(System.Windows.Forms.ListView listView1)
         {

@@ -10,10 +10,10 @@ namespace GSA_Carcara.Class
 {
     public class FilesHandler : IFilesHandler
     {
-        ILogVerification logVerify = new LogVerify();
-        IInsertLog logInsert = new LogInsert();
-        ICsvVerification csvVerify = new CsvVerify();
-        IInsertCsv csvInsert = new CsvInsert();
+        ILogVerification logVerify = new Log();
+        IInsertLog logInsert = new Log();
+        ICsvVerification csvVerify = new Csv();
+        IInsertCsv csvInsert = new Csv();
         public void CsvHandler(string dir)
         {
             DirectoryInfo DBdirectoryInfo = new DirectoryInfo(dir);
@@ -27,7 +27,7 @@ namespace GSA_Carcara.Class
 
                 if (file.Extension.Contains(".csv") && verify == true)
                 {
-                    csvInsert.Insert(file);
+                    csvInsert.InsertCsv(file);
                 }
             }
         }
@@ -43,7 +43,7 @@ namespace GSA_Carcara.Class
                 }
                 if (file.Extension.Contains(".log") && verify == true)
                 {
-                    logInsert.Insert(file);
+                    logInsert.InsertLog(file);
                 }
             }
         }

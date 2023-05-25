@@ -12,15 +12,15 @@ using System.Windows.Forms;
 
 namespace GSA_Carcara.Classes
 {
-    public class DBmongo
+    public class DBmongo : IUpdateMongo
     {
         ITimesStempHandler datetime = new TimeStempHandler();
         IStatusDatabase statusDB = new VerifyStatusDB();
         IDirectorySelect getDir = new GetDirectory();
         ISaveDBdirectory DBdir = new DirectoryDBsave();
         IFilesHandler files = new FilesHandler();
-        string DBfolder;
-        string[] dirs;
+        string DBfolder=null;
+        string[] dirs=null;
         public void UpdateMongo(Label DatabaseStatus)
         {         
             try
@@ -35,13 +35,13 @@ namespace GSA_Carcara.Classes
                     files.CsvHandler(dir);                
                     files.LogHandler(dir);                
                 }
-                datetime.DeleteDateTimes();
-                statusDB.SetStatusDatabase(DatabaseStatus);                      //csv file and log file contain small differences regarding the number of document counts, this function removes non intersection data,    
+                datetime.DeleteDateTimes();                                         //csv file and log file contain small differences regarding the number of document counts, this function removes non intersection data,                  
             }                                                                       //and also data that does not exist in both collections (Keeps data from the intersection of collections using DateTime comparassion for this)
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }         
+            }
+            statusDB.SetStatusDatabase(DatabaseStatus);
         }
     }
 }

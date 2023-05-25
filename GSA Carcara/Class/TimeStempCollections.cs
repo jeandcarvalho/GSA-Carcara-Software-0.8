@@ -15,8 +15,10 @@ namespace GSA_Carcara.Class
         IRatingCollection rating = new GetCollections();
         List<DateTime> listCar = new List<DateTime>();
         List<DateTime> listRat = new List<DateTime>();
+        
         public List<DateTime> CarDateTime()
         {
+            listCar.Clear();
             var Measurements = car.CarCollection();           
             var query = from e in Measurements.AsQueryable<Vehicle>() where e.TimeStemp != null select e.TimeStemp;
             foreach (var time in query) { listCar.Add(time); }  
@@ -24,6 +26,7 @@ namespace GSA_Carcara.Class
         }
         public List<DateTime> RatingDateTime()
         {
+            listRat.Clear();
             var Ratings = rating.RatingCollection();
             var query = from e in Ratings.AsQueryable<Rating>() where e.TimeStemp != null select e.TimeStemp;
             foreach (var time in query) { listRat.Add(time); }

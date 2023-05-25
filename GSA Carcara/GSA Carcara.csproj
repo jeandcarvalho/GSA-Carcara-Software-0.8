@@ -181,15 +181,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\CsvInsert.cs" />
-    <Compile Include="Class\CsvVerify.cs" />
+    <Compile Include="Class\Csv.cs" />
     <Compile Include="Class\FilesHandler.cs" />
+    <Compile Include="Class\Filter.cs" />
     <Compile Include="Class\TimeStempHandler.cs" />
     <Compile Include="Class\TimeStempIntersect.cs" />
     <Compile Include="Class\DirectoryDBload.cs" />
     <Compile Include="Class\TimeStempCollections.cs" />
-    <Compile Include="Class\LogInsert.cs" />
-    <Compile Include="Class\LogVerify.cs" />
+    <Compile Include="Class\Log.cs" />
     <Compile Include="Class\DirectoryDBsave.cs" />
     <Compile Include="Class\GetDirectory.cs" />
     <Compile Include="Class\MediaPlayerConfig.cs" />
@@ -197,14 +196,11 @@
     <Compile Include="Class\MapPlace.cs" />
     <Compile Include="FunctionsToUpdate\DateTimeTools.cs" />
     <Compile Include="Class\Directory.cs" />
-    <Compile Include="FunctionsToUpdate\FiltersFunctions.cs" />
-    <Compile Include="FunctionsToUpdate\ListViewHandler.cs" />
+    <Compile Include="Class\ListViewHandler.cs" />
     <Compile Include="Controls\Map.cs" />
     <Compile Include="FunctionsToUpdate\MediaPlayerHandler.cs" />
     <Compile Include="FunctionsToUpdate\MediaPlayerControls.cs" />
-    <Compile Include="Class\StatusDB.cs" />
     <Compile Include="Controls\DBmongo.cs" />
-    <Compile Include="FunctionsToUpdate\SyncCollections.cs" />
     <Compile Include="FunctionsToUpdate\VideosFileName.cs" />
     <Compile Include="Carcara.cs">
       <SubType>Form</SubType>

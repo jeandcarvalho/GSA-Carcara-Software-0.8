@@ -17,20 +17,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GSA_Carcara.Classes
 {
-    public class Map
+    public class Map : IMap
     {
+        IGetCoordinates mapSet = new MapCoordinates();
+        IShowMarkers mapMarkers = new MapMarkers();
         public void SetStarterMap( GMapControl map)
         {
-            map.MapProvider = GMapProviders.GoogleMap;
-            IGetCoordinates mapSet = new MapCoordinates();
-            IShowMarkers mapMarkers = new MapMarkers();                    
+            map.MapProvider = GMapProviders.GoogleMap;               
             var gpsX = mapSet.GetCoordinatesX();
             var gpsY = mapSet.GetCoordinatesY();
             var gpsXList = mapSet.ListCoordinatesX(gpsX);                    
             var gpsYList = mapSet.ListCoordinatesY(gpsY); 
             mapMarkers.ShowMarkers(map, gpsXList, gpsYList);          
         }
-
         public void SetMap(List<Vehicle> Measurements, GMapControl map, System.Windows.Forms.ListView listView)
         {
             IPlaceMap place = new MapPlace();

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GSA_Carcara.Class
 {
-    public class MediaPlayerConfig : IInitialSettings
+    public class MediaPlayerConfig : IMPInitialSettings
     {
         public void InitSettings(AxWindowsMediaPlayer axWindowsMediaPlayer1, AxWindowsMediaPlayer axWindowsMediaPlayer2,
                                  AxWindowsMediaPlayer axWindowsMediaPlayer3, AxWindowsMediaPlayer axWindowsMediaPlayer4,

@@ -5,9 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GSA_Carcara.Interface
 {
+    interface IUpdateMongo
+    {
+        void UpdateMongo(Label DatabaseStatus);
+    }
     interface ICarCollection
     {
         IMongoCollection<Vehicle> CarCollection();
@@ -42,5 +47,12 @@ namespace GSA_Carcara.Interface
     interface ITimesStempHandler
     {
         void DeleteDateTimes();
+    }
+
+    interface IFilter
+    {
+        List<Vehicle> CarFilter(string[] Filters);
+        List<Rating> RatingFilter(string[] Filters);
+        void IntersectFilters(List<Vehicle> CarFiltred, List<Rating> RatingFiltred);
     }
 }

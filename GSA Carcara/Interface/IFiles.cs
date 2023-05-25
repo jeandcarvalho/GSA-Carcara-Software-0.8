@@ -9,7 +9,7 @@ namespace GSA_Carcara.Interface
 {
     interface IInsertCsv
     {
-        void Insert(FileInfo file);
+        void InsertCsv(FileInfo file);
     }
 
     interface ICsvVerification
@@ -19,7 +19,7 @@ namespace GSA_Carcara.Interface
 
     interface IInsertLog
     {
-        void Insert(FileInfo file);
+        void InsertLog(FileInfo file);
     }
 
     interface ILogVerification
