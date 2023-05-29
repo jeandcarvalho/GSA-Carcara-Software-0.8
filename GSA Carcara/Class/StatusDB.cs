@@ -12,7 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GSA_Carcara.Class
 {
-    public class VerifyStatusDB : IStatusDatabase
+    public class StatusDB : IStatusDatabase
     {
         ICarCollection car = new GetCollections();
         public void SetStatusDatabase(System.Windows.Forms.Label status)

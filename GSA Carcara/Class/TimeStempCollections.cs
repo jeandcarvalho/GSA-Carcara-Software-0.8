@@ -15,7 +15,6 @@ namespace GSA_Carcara.Class
         IRatingCollection rating = new GetCollections();
         List<DateTime> listCar = new List<DateTime>();
         List<DateTime> listRat = new List<DateTime>();
-        
         public List<DateTime> CarDateTime()
         {
             listCar.Clear();

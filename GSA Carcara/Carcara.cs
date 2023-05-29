@@ -5,6 +5,7 @@ using GSA_Carcara.Classes;
 using GSA_Carcara.Controls;
 using GSA_Carcara.Interface;
 using GSA_Carcara.Models;
+using MediaPlayer;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -27,11 +28,13 @@ namespace GSA_Carcara
         public List<Vehicle> CarFiltred = new List<Vehicle>();
         public List<Rating> RatingFiltred = new List<Rating>();
         IMap maps = new Map();
-        IStatusDatabase statusDB = new VerifyStatusDB();
+        IStatusDatabase statusDB = new StatusDB();
         IListView listViewAux = new ListViewHandler();
-        IMPInitialSettings setMP = new MediaPlayerConfig();
+        IMPInitialSettings setMP = new MediaPlayerSettings();
         IUpdateMongo updateDB = new DBmongo();
-        IFilter filter = new Filter();
+        IFilter filter = new Filter();       
+        IMediaPlayerButtons MPbuttons = new MediaPlayerButtons();
+        IMediaPlayerSet mp = new MediaPlayers();
         IExtract extract = new Extract();
 
         public Carcara()
@@ -55,16 +58,15 @@ namespace GSA_Carcara
         {
             try
             {           
-                string[] CarFilters = { textBox1.Text, textBox2.Text, comboBox6.Text };                                                                                                                                  //catch the selects filters in combobox's                            
+                string[] CarFilters = { textBox1.Text, textBox2.Text, comboBox6.Text };                                                                                                                                                  
                 string[] RatingFilters = { comboBox1.Text, comboBox2.Text, comboBox3.Text,
                                            comboBox4.Text, comboBox7.Text, comboBox8.Text,
                                            comboBox9.Text, comboBox10.Text };                
-
-                CarFiltred = filter.CarFilter(CarFilters);                                                                                                                                                               //apply filters in measurements collection, and get query data to a list
-                RatingFiltred = filter.RatingFilter(RatingFilters);                                                                                                                                                      //apply filters in ratings collection, and get query data to a list
-                filter.IntersectFilters(CarFiltred, RatingFiltred);                                                                                                                                                      //this function finds intersection data between these two filtered lists, when finished, items.counts of both filtered  results are the same                                                                                                                                                                     //Config listview
+                CarFiltred = filter.CarFilter(CarFilters);                                                                                                                                                              
+                RatingFiltred = filter.RatingFilter(RatingFilters);                                                                                                                                                     
+                filter.IntersectFilters(CarFiltred, RatingFiltred);                                          //this function finds intersection data between these two filtered lists, when finished, items.counts of both filtered  results are the same                                                                                                                                                                     //Config listview
                 listViewAux.setListView(listView1);
-                listViewAux.AddToListView(listView1, CarFiltred);                                                                                                                                         //add items to listview
+                listViewAux.AddToListView(listView1, CarFiltred);                                                                                                                                         
             }
             catch (Exception ex)
             {
@@ -74,16 +76,19 @@ namespace GSA_Carcara
 
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
-            new MediaPlayerHandler().SetVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3, axWindowsMediaPlayer4,  //set and play videos
-                                               axWindowsMediaPlayer5, axWindowsMediaPlayer6, CarFiltred, RatingFiltred, listView1);
-            new Map().SetMap(CarFiltred, map, listView1);   //defines map position to the same location in the moment clicked
+            mp.SetVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2,
+                         axWindowsMediaPlayer3, axWindowsMediaPlayer4,  
+                         axWindowsMediaPlayer5, axWindowsMediaPlayer6,
+                         CarFiltred, listView1);//set and play videos
+            maps.SetMap(CarFiltred, map, listView1);//map position to moment clicked
         }
+
         private void ExtractButton_Click(object sender, EventArgs e)
         {
-            try
+            try    //extract video files and data queried 
             {
-                extract.ExtractToFolder(CarFiltred, RatingFiltred);  //extract video files and data queried          
-            }
+                extract.ExtractToFolder(CarFiltred, RatingFiltred);
+            }             
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -92,40 +97,33 @@ namespace GSA_Carcara
 
         private void PlayVideos_Click(object sender, EventArgs e)
         {
-            new MediaPlayerControls().PlayVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
-                                                 axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
+            MPbuttons.PlayMP(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
+                             axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
         }
-
         private void PauseVideos_Click(object sender, EventArgs e)
         {
-            new MediaPlayerControls().PauseVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
-                                                 axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
+            MPbuttons.PauseMP(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
+                              axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
         }
-
         private void Less5Seconds_Click(object sender, EventArgs e)
         {
-            new MediaPlayerControls().LessSecondsToVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
-                                                axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
+            MPbuttons.LessMP(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
+                             axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
         }
-
         private void More5Seconds_Click(object sender, EventArgs e)
         {
-            new MediaPlayerControls().MoreSecondsToVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
-                                                axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
+            MPbuttons.MoreMP(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
+                             axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
         }
-
         private void ForwardButton_Click(object sender, EventArgs e)
         {
-            new MediaPlayerControls().ForwardVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
-                                               axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
+            MPbuttons.ForwMP(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
+                             axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
         }
-
         private void BackwardButton_Click(object sender, EventArgs e)
         {
-            new MediaPlayerControls().BackwardToVideos(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
-                                               axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
-        }
-
-        
+            MPbuttons.BackMP(axWindowsMediaPlayer1, axWindowsMediaPlayer2, axWindowsMediaPlayer3,
+                             axWindowsMediaPlayer4, axWindowsMediaPlayer5, axWindowsMediaPlayer6);
+        }   
     }   
 }

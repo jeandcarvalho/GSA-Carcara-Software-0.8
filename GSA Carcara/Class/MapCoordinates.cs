@@ -44,7 +44,4 @@ namespace GSA_Carcara.Class
             return gpsY;
         }
     }
-
-  
-    
 }

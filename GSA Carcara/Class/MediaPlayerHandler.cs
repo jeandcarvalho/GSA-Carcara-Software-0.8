@@ -1,20 +1,34 @@
-﻿using System;
+﻿using AxWMPLib;
+using GSA_Carcara.Interface;
+using GSA_Carcara.Models;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GSA_Carcara.Classes
 {
-    public class DateTimeTools
+    public class MediaPlayerHandler : IClickedVideos
     {
-        public DateTime ItemToDateTime(string DateTime)
+        public string FindClickedVideos(List<Vehicle> CarFiltred, DateTime moment)
         {
-            DateTime moment = Convert.ToDateTime(DateTime);
-            return moment;
+            string videoName = null;
+            foreach (var data in CarFiltred)
+            {
+                if (data.TimeStemp == moment)                       // get video name from the moment clicked
+                {
+                    videoName = data.VideoName; break;
+                }
+            }
+            return videoName;
         }
-
-        public DateTime VideoNameToDateTime(string videoName)
+        public DateTime VideoStartDateTime(string videoName)
         {
             string InicioNoDir = videoName.Substring(9, 19);
             string year = InicioNoDir.Substring(0, 4);
@@ -27,12 +41,11 @@ namespace GSA_Carcara.Classes
             DateTime begin = Convert.ToDateTime(videoIni);
             return begin;
         }
-
-        public double VideosStartSeconds(DateTime moment, DateTime begin) 
+        public double DefinePosition(DateTime moment, DateTime begin)
         {
             TimeSpan VideoIni = moment - begin;
             double secIni = VideoIni.TotalSeconds;
             return secIni;
-        }
+        }  
     }
 }

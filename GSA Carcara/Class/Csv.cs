@@ -20,7 +20,7 @@ namespace GSA_Carcara.Class
             string[] csvLines = System.IO.File.ReadAllLines(file.FullName);
             for (int i = 1; i < csvLines.Length; i++)
             {
-                string[] data = csvLines[i].Split(',');  
+                string[] data = csvLines[i].Split(',');
                 float angle = float.Parse(data[10], CultureInfo.InvariantCulture.NumberFormat);
                 string curve = "Straight line";
                 if (angle < -20) { curve = "Right turn"; }  //needs to be improved
@@ -38,18 +38,18 @@ namespace GSA_Carcara.Class
                 });
             }
         }
-    public bool CsvVerification(string fileName)
-    {
-        var Measurements = car.CarCollection();
-        var query =
-                   from e in Measurements.AsQueryable<Vehicle>()
-                   where e.VideoName == fileName.Substring(0, 28)
-                   select e.VideoName;
-        if (!query.Any())
+        public bool CsvVerification(string fileName)
         {
-            return true;
+            var Measurements = car.CarCollection();
+            var query =
+                       from e in Measurements.AsQueryable<Vehicle>()
+                       where e.VideoName == fileName.Substring(0, 28)
+                       select e.VideoName;
+            if (!query.Any())
+            {
+                return true;
+            }
+            return false;
         }
-        return false;
     }
-}
 }

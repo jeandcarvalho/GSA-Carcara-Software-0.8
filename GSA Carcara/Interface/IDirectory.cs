@@ -10,12 +10,10 @@ namespace GSA_Carcara.Interface
     {
         string SelectDirectory();
     }
-
     interface ISaveDBdirectory
     {
         void SaveFolderDB(string folder);
     }
-
     interface IGetDBdirectory
     {
        string GetFolderDB();

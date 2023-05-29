@@ -28,7 +28,6 @@ namespace GSA_Carcara.Class
                         from e in Measurements.AsQueryable<Vehicle>()
                         where e.VehicleSpeed >= SpeedMin && e.VehicleSpeed <= SpeedMax && e.Curves.Contains(Filters[2])
                         select e;
-
             foreach (var data in Cquery) { listcar.Add(data); }
             return listcar;
         }
@@ -43,7 +42,6 @@ namespace GSA_Carcara.Class
                               e.DayPeriod.Contains(Filters[4]) && e.Weather.Contains(Filters[5]) &&
                               e.Visibility.Contains(Filters[6]) && e.Driver.Contains(Filters[7])
                         select e;
-
             foreach (var data in Rquery) { listrating.Add(data); }
             return listrating;
         }

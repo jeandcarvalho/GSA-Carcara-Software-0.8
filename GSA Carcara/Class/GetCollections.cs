@@ -18,7 +18,6 @@ namespace GSA_Carcara.Class
             var Measurements = database.GetCollection<Vehicle>("Measurements");
             return Measurements;
         }
-
         public IMongoCollection<Rating> RatingCollection()
         {
             IMongoClient client = new MongoClient("mongodb://localhost:27017");

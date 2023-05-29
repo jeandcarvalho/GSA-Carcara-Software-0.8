@@ -42,6 +42,5 @@ namespace GSA_Carcara.Models
 
         [BsonElement("logName")]
         public string LogName { get; set; }
-
     }
 }

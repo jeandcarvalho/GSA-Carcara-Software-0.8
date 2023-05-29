@@ -15,9 +15,9 @@ namespace GSA_Carcara.Classes
     public class DBmongo : IUpdateMongo
     {
         ITimesStempHandler datetime = new TimeStempHandler();
-        IStatusDatabase statusDB = new VerifyStatusDB();
-        IDirectorySelect getDir = new GetDirectory();
-        ISaveDBdirectory DBdir = new DirectoryDBsave();
+        IStatusDatabase statusDB = new StatusDB();
+        IDirectorySelect getDir = new Class.GetDirectory();
+        ISaveDBdirectory DBdir = new DirectoryDB();
         IFilesHandler files = new FilesHandler();
         string DBfolder=null;
         string[] dirs=null;
@@ -29,7 +29,7 @@ namespace GSA_Carcara.Classes
                 statusDB.DatabaseLoading(DatabaseStatus);  
                 DBfolder = getDir.SelectDirectory();
                 DBdir.SaveFolderDB(DBfolder);                                         //save db directory in local storage to aux other functions
-                dirs = Directory.GetDirectories(DBfolder);
+                dirs = System.IO.Directory.GetDirectories(DBfolder);
                 foreach (string dir in dirs)                                          //apply functions to all folders in DB
                 {
                     files.CsvHandler(dir);                

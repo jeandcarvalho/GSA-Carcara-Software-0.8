@@ -20,7 +20,6 @@ namespace GSA_Carcara.Classes
             listView1.Columns.Clear();
             listView1.Columns.Add("Result", 155);
         }
-
         public void AddToListView(System.Windows.Forms.ListView listView1, List<Vehicle> CarFiltred)
         {
             

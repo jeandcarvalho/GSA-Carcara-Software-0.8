@@ -15,7 +15,7 @@ namespace GSA_Carcara
 {
     public class ExtractFiles : IExtractFiles
     {
-        IGetDBdirectory getDB = new DirectoryDBload();
+        IGetDBdirectory getDB = new DirectoryDB();
         public List<string> GetVideosToExtract(List<Vehicle> CarFiltred)
         {
             List<string> VideoFiles = new List<string>();
@@ -32,7 +32,6 @@ namespace GSA_Carcara
                 }
             } return VideoFiles;
         }
-
         public void ExtractVideos(string VideoFile, string outputFolder)
         {
             string DBinfo = getDB.GetFolderDB();
@@ -51,7 +50,6 @@ namespace GSA_Carcara
                 }
             }
         }
-
         public void ExtractCsv(List<Vehicle> CarFiltred, List<Rating> RatingFiltred, string outputFolder)                          
         {
             using (FileStream fs = File.Create(outputFolder + "\\Data extracted.csv")) { }

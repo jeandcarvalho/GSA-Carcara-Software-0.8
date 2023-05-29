@@ -20,7 +20,7 @@ namespace GSA_Carcara.Classes
     public class Map : IMap
     {
         IGetCoordinates mapSet = new MapCoordinates();
-        IShowMarkers mapMarkers = new MapMarkers();
+        IShowMarkers mapMarkers = new MapHandler();
         public void SetStarterMap( GMapControl map)
         {
             map.MapProvider = GMapProviders.GoogleMap;               
@@ -32,7 +32,7 @@ namespace GSA_Carcara.Classes
         }
         public void SetMap(List<Vehicle> Measurements, GMapControl map, System.Windows.Forms.ListView listView)
         {
-            IPlaceMap place = new MapPlace();
+            IPlaceMap place = new MapHandler();
             place.PlaceMap(map, listView, Measurements);
         }
     }

@@ -22,7 +22,6 @@ namespace GSA_Carcara.Interface
     {
         IMongoCollection<Rating> RatingCollection();
     }
-
     interface IGetCoordinates
     {
         IQueryable<float> GetCoordinatesX();       

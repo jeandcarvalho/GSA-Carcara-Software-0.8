@@ -184,35 +184,30 @@
     <Compile Include="Class\Csv.cs" />
     <Compile Include="Class\FilesHandler.cs" />
     <Compile Include="Class\Filter.cs" />
+    <Compile Include="Class\MediaPlayerButtons.cs" />
     <Compile Include="Class\TimeStempHandler.cs" />
-    <Compile Include="Class\TimeStempIntersect.cs" />
-    <Compile Include="Class\DirectoryDBload.cs" />
+    <Compile Include="Class\DirectoryDB.cs" />
     <Compile Include="Class\TimeStempCollections.cs" />
     <Compile Include="Class\Log.cs" />
-    <Compile Include="Class\DirectoryDBsave.cs" />
     <Compile Include="Class\GetDirectory.cs" />
-    <Compile Include="Class\MediaPlayerConfig.cs" />
-    <Compile Include="Class\VerifyStatusDB.cs" />
-    <Compile Include="Class\MapPlace.cs" />
+    <Compile Include="Class\MediaPlayerSettings.cs" />
+    <Compile Include="Class\StatusDB.cs" />
+    <Compile Include="Class\MapHandler.cs" />
     <Compile Include="Controls\Extract.cs" />
-    <Compile Include="FunctionsToUpdate\DateTimeTools.cs" />
-    <Compile Include="Class\Directory.cs" />
+    <Compile Include="Controls\MediaPlayers.cs" />
     <Compile Include="Class\ListViewHandler.cs" />
     <Compile Include="Controls\Map.cs" />
-    <Compile Include="FunctionsToUpdate\MediaPlayerHandler.cs" />
-    <Compile Include="FunctionsToUpdate\MediaPlayerControls.cs" />
+    <Compile Include="Class\MediaPlayerHandler.cs" />
+    <Compile Include="Class\MediaPlayerControls.cs" />
     <Compile Include="Controls\DBmongo.cs" />
-    <Compile Include="FunctionsToUpdate\VideosFileName.cs" />
     <Compile Include="Carcara.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Carcara.Designer.cs">
       <DependentUpon>Carcara.cs</DependentUpon>
     </Compile>
-    <Compile Include="FunctionsToUpdate\MediaPlayerSettings.cs" />
     <Compile Include="Class\GetCollections.cs" />
     <Compile Include="Class\MapCoordinates.cs" />
-    <Compile Include="Class\MapMarkers.cs" />
     <Compile Include="Class\ExtractFiles.cs" />
     <Compile Include="Interface\IExtract.cs" />
     <Compile Include="Interface\IFiles.cs" />
