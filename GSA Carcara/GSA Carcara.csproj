@@ -194,6 +194,7 @@
     <Compile Include="Class\MediaPlayerConfig.cs" />
     <Compile Include="Class\VerifyStatusDB.cs" />
     <Compile Include="Class\MapPlace.cs" />
+    <Compile Include="Controls\Extract.cs" />
     <Compile Include="FunctionsToUpdate\DateTimeTools.cs" />
     <Compile Include="Class\Directory.cs" />
     <Compile Include="Class\ListViewHandler.cs" />
@@ -212,7 +213,8 @@
     <Compile Include="Class\GetCollections.cs" />
     <Compile Include="Class\MapCoordinates.cs" />
     <Compile Include="Class\MapMarkers.cs" />
-    <Compile Include="FunctionsToUpdate\Extract.cs" />
+    <Compile Include="Class\ExtractFiles.cs" />
+    <Compile Include="Interface\IExtract.cs" />
     <Compile Include="Interface\IFiles.cs" />
     <Compile Include="Interface\IDirectory.cs" />
     <Compile Include="Interface\ILayout.cs" />

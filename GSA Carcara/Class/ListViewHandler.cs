@@ -21,8 +21,9 @@ namespace GSA_Carcara.Classes
             listView1.Columns.Add("Result", 155);
         }
 
-        public void AddToListView(System.Windows.Forms.ListView listView1, List<Vehicle> CarFiltred, List<Rating> RatingFiltred)
+        public void AddToListView(System.Windows.Forms.ListView listView1, List<Vehicle> CarFiltred)
         {
+            
             for (int j = 0; j < CarFiltred.Count; j++)
             {
                 var item = new ListViewItem(new[] { CarFiltred[j].TimeStemp.ToString() });

@@ -15,7 +15,7 @@ namespace GSA_Carcara.Interface
     }
     interface IListView
     {
-        void setListView(System.Windows.Forms.ListView listView1);
-        void AddToListView(System.Windows.Forms.ListView listView1, List<Vehicle> CarFiltred, List<Rating> RatingFiltred);
+        void setListView(ListView listView1);
+        void AddToListView(ListView listView1, List<Vehicle> CarFiltred);
     }
 }

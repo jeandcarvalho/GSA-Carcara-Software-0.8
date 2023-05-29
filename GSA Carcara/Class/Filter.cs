@@ -14,15 +14,11 @@ namespace GSA_Carcara.Class
     {
         IQueryable<Vehicle> Cquery;
         IQueryable<Rating> Rquery;
-
-        List<DateTime> Car = new List<DateTime>();
-        List<DateTime> Rating = new List<DateTime>();
-        List<Vehicle> listcar = new List<Vehicle>();
-        List<Rating> listrating = new List<Rating>();
         ICarCollection car = new GetCollections();
         IRatingCollection rating = new GetCollections();
         public List<Vehicle> CarFilter(string[] Filters)
         {
+            List<Vehicle> listcar = new List<Vehicle>();
             var Measurements = car.CarCollection();
             if (Filters[0] == string.Empty) { Filters[0] = "0"; }
             if (Filters[1] == string.Empty) { Filters[1] = "220"; }
@@ -38,6 +34,7 @@ namespace GSA_Carcara.Class
         }
         public List<Rating> RatingFilter(string[] Filters)
         {
+            List<Rating> listrating = new List<Rating>();
             var Ratings = rating.RatingCollection();
             Rquery =
                         from e in Ratings.AsQueryable<Rating>()
@@ -50,16 +47,15 @@ namespace GSA_Carcara.Class
             foreach (var data in Rquery) { listrating.Add(data); }
             return listrating;
         }
-
         public void IntersectFilters(List<Vehicle> CarFiltred, List<Rating> RatingFiltred)
         {
+            List<DateTime> Car = new List<DateTime>();
+            List<DateTime> Rating = new List<DateTime>();
             foreach (var data in CarFiltred) { Car.Add(data.TimeStemp); }
             foreach (var data in RatingFiltred) { Rating.Add(data.TimeStemp); }
             var Intersect = Car.Intersect(Rating).ToList();
             foreach (var time in CarFiltred.ToList()) { if (!Intersect.Contains(time.TimeStemp)) { CarFiltred.Remove(time); } }
             foreach (var time in RatingFiltred.ToList()) { if (!Intersect.Contains(time.TimeStemp)) { RatingFiltred.Remove(time); } }
         }
-
-        
     }
 }
